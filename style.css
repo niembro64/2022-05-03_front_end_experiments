@@ -121,6 +121,9 @@ h1 {
   width: 150px;
   height: 150px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card2-inner {
@@ -129,45 +132,87 @@ h1 {
   background-color: rgba(255, 255, 255, 0.309);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.117);
   backdrop-filter: blur(10px);
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .circle {
   width: auto;
   height: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; 
+  padding: 15px;
   /* background: radial-gradient(yellow, green); */
-  border-radius: 4px;
+  border-radius: 8px;
   color: white;
   /* border: 1px solid black; */
   position: absolute;
   animation: move-up 2s ease-in-out infinite alternate-reverse;
 }
+.circle2 {
+  width: auto;
+  height: 10px;
+  /* border: 1px solid black; */
 
-.circle:nth-child(1) {
-  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* background: radial-gradient(yellow, green); */
+  border-radius: 8px;
+  color: white;
+  /* border: 1px solid black; */
+  position: absolute;
+  animation: move-up 2.2s ease-in-out infinite alternate-reverse;
+}
+.circle3 {
+  width: auto;
+  height: 10px;
+  /* border: 1px solid black; */
 
-  top: 10px;
-  left: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* background: radial-gradient(yellow, green); */
+  border-radius: 8px;
+  color: white;
+  /* border: 1px solid black; */
+  position: absolute;
+  animation: move-up 2.1s ease-in-out infinite alternate-reverse;
 }
 .circle:nth-child(2) {
-  background-color: rgb(0, 77, 128);
-  bottom: 10px;
-  left: -150px;
-  animation-name: move-down;
+  background-color: transparent;
+  bottom: 300px;
+  left: 20px;
+  animation-name: move-up2;
+}
+.circle2:nth-child(2) {
+  background-color: transparent;
+  bottom: 50px;
+  left: 30px;
+  animation-name: move-up2;
+}
+.circle3:nth-child(3) {
+  background-color: transparent;
+  bottom: 50px;
+  left: 0px;
+  animation-name: move-up3;
 }
 @keyframes move-up {
   to {
-    transform: translateX(-250px) translateY(-30px);
+    transform: translateX(70px) translateY(55px);
   }
 }
-@keyframes move-down {
+@keyframes move-up2 {
   to {
-    transform: translateX(310px) translateY(30px);
+    transform: translateX(50px) translateY(-90px);
+  }
+}
+@keyframes move-up3 {
+  to {
+    transform: translateX(-50px) translateY(30px);
   }
 }
