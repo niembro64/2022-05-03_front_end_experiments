@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Comic Mono', 'Courier New', Courier, monospace; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  z-index: 999;
+  width: 100px;
+  height: 200px;
+  background-color: rgba(174, 174, 174,1 );
+  color: white;
+  border-radius: 4px;
+  transform: rotate(20deg) skew(-10deg, -5deg);
+  box-shadow: rgba(0, 0, 0, 1) 5px 5px;
+  transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  border: 1px solid black;
+
+  padding: 10px;
+  margin: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card > img {
+  max-width: 90px;
+  max-height: 90px;
+  filter: grayscale(100%) brightness(80%) hue-rotate(0deg) invert(0%);
+  /* filter: grayscale(100%); */
+  transition: filter 0.5s ease-out;
+}
+.card > h1 {
+  color: rgb(68, 68, 68);
+  filter: grayscale(100%);
+  transition: filter 0.25s ease-in-out;
+}
+
+.card:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(111, 137, 184);
+  /* border: 1px solid rgb(255, 0, 212); */
+
+  box-shadow: rgba(0, 0, 0, 1) 5px 5px, rgba(0, 0, 0, 0.6) 10px 10px,
+    rgba(0, 0, 0, 0.4) 15px 15px, rgba(0, 0, 0, 0.2) 20px 20px;
+  transition: box-shadow 0.25s ease-out;
+}
+.card:hover > img {
+  /* filter: invert(50%); */
+  filter: grayscale(0%) brightness(100%) hue-rotate(0deg) invert(0%);
+}
+.card:hover > h1 {
+  color: rgb(0, 0, 0);
+  filter: grayscale(0%);
+}
+
+.card:leave > img {
+  filter: grayscale(0%) brightness(100%) hue-rotate(360deg) invert(0%);
+transition: filter .25s ease-in-out;
+}
+
+.card:active {
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgb(111, 137, 184) 10px 10px, rgba(0, 0, 0, 0) 30px 30px,
+    rgba(0, 0, 0, 0) 45px 45px, rgba(0, 0, 0, 0) 60px 60px;
+}
+.card:active > img {
+  color: white;
+  filter: grayscale(100%) brightness(0%) hue-rotate(360deg) invert(100%);
+}
+.card:active > h1 {
+  color: white;
+}
+
+p {
+  margin: 30px 0px;
+}
+
+h1 {
+  margin: 15px 0px;
+}
+
+.card-group {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.line {
+  width: 80%;
+  height: 6px;
+  background-color: black;
+  margin: 50px 0px;
+  border-radius: 3px;
+}
