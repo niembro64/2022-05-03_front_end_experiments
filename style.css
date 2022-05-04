@@ -51,14 +51,12 @@ body {
 
 .card:hover {
   color: rgb(0, 0, 0);
-  background-color: rgb(111, 137, 184);
+  background-color: rgb(100, 140, 180);
   /* border: 1px solid rgb(255, 0, 212); */
   transform: rotate(5deg) skew(-5deg, -2deg) translateY(-30px) translateX(-20px)
     scale3d(130%, 130%, 110%);
-
-  box-shadow: rgb(0, 0, 0) 5px 5px, rgba(0, 0, 0, 0) 5px 5px,
-    rgba(0, 0, 0, 0) 5px 5px, rgba(0, 0, 0, 0) 5px 5px;
-
+  box-shadow: rgba(0, 0, 0, 1) 5px 5px, rgba(0, 0, 0, 0.6) 10px 10px,
+    rgba(0, 0, 0, 0.4) 15px 15px, rgba(0, 0, 0, 0.2) 20px 20px;
   transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out,
     transform 0.25s ease-in-out;
 }
@@ -74,9 +72,11 @@ body {
 }
 
 .card:active {
-  background-color: rgb(36, 36, 58);
-  box-shadow: rgba(0, 0, 0, 1) 5px 5px, rgba(0, 0, 0, 0.6) 10px 10px,
-    rgba(0, 0, 0, 0.4) 15px 15px, rgba(0, 0, 0, 0.2) 20px 20px;
+  background-color: rgb(100, 140, 180);
+  transform: rotate(0deg) skew(0deg, 0deg) translateY(-38px) translateX(-20px)
+    scale3d(140%, 140%, 110%);
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px, rgba(0, 0, 0, 0.6) 0px 0px,
+    rgba(0, 0, 0, 0.4) 0px 0px, rgba(0, 0, 0, 0.2) 0px 0px;
   transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out,
     transform 0.25s ease-in-out;
 }
@@ -129,15 +129,17 @@ h1 {
   height: inherit;
   background-color: rgba(255, 255, 255, 0.309);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(1px) ;
+  /* backdrop-filter: blur(2px); */
+  backdrop-filter: saturate(20%) blur(1px) brightness(90%);
   border-radius: 50%;
+  /* box-shadow: rgba(0, 0, 0, .1) 5px 5px; */
 }
 .card2-inner2 {
   width: 70%;
   height: 70%;
   background-color: rgba(255, 255, 255, 0.309);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
+  backdrop-filter: saturate(20%) blur(2px) brightness(90%);
   border-radius: 50%;
   position: absolute;
   bottom: 30px;
@@ -174,7 +176,7 @@ h1 {
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up 2.2s ease-in-out infinite alternate-reverse;
+  animation: move-up 2.7s ease-in-out infinite alternate-reverse;
 }
 .circle3 {
   width: auto;
