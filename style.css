@@ -235,6 +235,16 @@ h1 {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-  background-color: grey;
+  background-color: red;
   border-radius: 50%;
+}
+
+button {
+  margin: 2px 5px;
+  padding: 0px 15px;
+  background-color: white;
+  border-radius: 3px;
+}
+button:hover {
+  background-color: wheat;
 }
