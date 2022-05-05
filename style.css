@@ -33,6 +33,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .card > img {
   max-width: 60px;
@@ -41,12 +47,24 @@ body {
   /* filter: grayscale(100%); */
   transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out,
     transform 0.25s ease-in-out, filter 0.25s ease-in-out;
+
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .card > h1 {
   color: rgb(68, 68, 68);
   filter: grayscale(100%);
   transition: filter 0.25s ease-in-out;
   font-size: large;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .card:hover {
@@ -264,15 +282,15 @@ button:hover {
 }
 
 #colorBoi {
-  width: 50px;
-  min-height: 50px;
+  width: 40px;
+  min-height: 40px;
   padding: 0px;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
 
 #colorbox {
-  max-width: 400px;
+  max-width: 320px;
   background-color: rgba(0, 0, 0, 0);
 
   /* border: 1px solid black; */
@@ -288,14 +306,21 @@ button:hover {
   /* transform: rotateZ(45deg) scale(75%); */
   /* box-shadow: rgba(0, 0, 0, 1) 5px 5px; */
 }
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
 .buttons > button {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin: 20px;
-  border-radius: 50%;
+  border-radius: 10%;
   border-width: 10px;
   border-color: transparent;
   font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons > button:hover {
