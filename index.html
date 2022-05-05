@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/desktop_icon.png">
+    <link rel="icon" type="image/x-icon" href="/desktop_icon.png" />
     <title>CSS Desktop</title>
   </head>
   <body>
@@ -74,8 +74,23 @@
     <div class="line"></div>
     <h1>Color Play</h1>
     <p><i>coming soon</i></p>
-    <div class="cell"></div>
+    <div id="bodyName">
+      <div>
+        <div id="dupParent" onmouseenter="duplicate()">
+          <div id="duplicater">🤔</div>
+          <div id="duplicater">🤔</div>
+          <div id="duplicater">🤔</div>
+        </div>
+        <h1 id="firstName">Test Niemo</h1>
+        <button onclick="deleteElement(this)">Delete</button>
+        <button onclick="changeElement(this)">Change</button>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div onmouseover="changeColor(this)" id="colorBoi"></div>
+    <div onmouseover="changeColor(this)" id="colorBoi"></div>
     <div class="line"></div>
     <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
