@@ -235,6 +235,7 @@ h1 {
   height: 50px;
   width: 50px;
   border: 1px solid black;
+
   background-color: red;
   border-radius: 50%;
 }
@@ -249,12 +250,12 @@ button:hover {
   background-color: wheat;
 }
 
-#dupParent{
+#dupParent {
   width: 100px;
-  min-height: 100px; 
-  padding: 15px; 
+  min-height: 100px;
+  padding: 15px;
   background-color: black;
-  color: white; 
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,14 +264,45 @@ button:hover {
 }
 
 #colorBoi {
-  width: 100px;
-  min-height: 100px; 
-  padding: 15px; 
-  background-color: rgb(0, 0, 0);
-  color: white; 
+  width: 50px;
+  min-height: 50px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#colorbox {
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0);
+
+  /* border: 1px solid black; */
+  padding: 0px;
+  margin: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
+  /* transform: rotate(20deg) skew(-30deg, -5deg); */
+  /* transform: rotateZ(45deg) scale(75%); */
+  /* box-shadow: rgba(0, 0, 0, 1) 5px 5px; */
+}
+.buttons > button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  border-radius: 50%;
+  border-width: 10px;
+  border-color: transparent;
+  font-size: xx-large;
+}
+
+.buttons > button:hover {
+
+  border-color: rgba(255, 255, 255, 0.384);
+}
+.buttons > button:active {
+
+  border-color: rgb(255, 255, 255);
 }
