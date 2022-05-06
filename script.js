@@ -11,16 +11,6 @@ function changeElement(ele) {
 }
 
 var i = 0;
-var original = document.getElementById("duplicater");
-
-function duplicate() {
-  var clone = original.cloneNode(true); // "deep" clone
-  clone.id = "duplicater" + ++i;
-  // or clone.id = ""; if the divs don't need an ID
-  original.parentNode.appendChild(clone);
-  // original.parentNode.appendChild;
-  // original.appendChild(clone);
-}
 
 // var cBoi = document.querySelector("#colorBoi");
 
@@ -178,7 +168,7 @@ function onUpKill(ele) {
   ele.innerHTML = "";
   ele.parentNode.removeChild(ele);
   score_count++;
-  score_div.innerHTML = score_count; 
+  score_div.innerHTML = score_count;
 }
 function onEnterKill(ele) {
   ele.innerHTML = "😲";
@@ -189,4 +179,19 @@ function onLeaveKill(ele) {
   ele.style.cursor = "default";
 }
 
+var emo = document.querySelector("#ccc");
+function generateEmoji() {
+  var clone = emo.cloneNode(true);
+  clone.id = "ccc";
+  emo.parentNode.appendChild(clone);
+}
 
+var original = document.getElementById("duplicater");
+function duplicate() {
+  var clone = original.cloneNode(true); // "deep" clone
+  clone.id = "duplicater" + ++i;
+  // or clone.id = ""; if the divs don't need an ID
+  original.parentNode.appendChild(clone);
+  // original.parentNode.appendChild;
+  // original.appendChild(clone);
+}
