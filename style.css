@@ -247,6 +247,7 @@ h1 {
 }
 .worldContainer {
   height: 150px;
+  margin: 30px 0px 0px 0px; 
 }
 
 .cell {
@@ -330,4 +331,9 @@ button:hover {
 .buttons > button:active {
 
   border-color: rgb(255, 255, 255);
+}
+
+ul {
+  color: grey; 
+  font-size: small;
 }
