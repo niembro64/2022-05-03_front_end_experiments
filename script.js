@@ -168,6 +168,8 @@ function onMouseEnterHandler(ele) {
 function onMouseLeaveHandler(ele) {
   ele.style.cursor = "default";
 }
+var score_div = document.querySelector("#score");
+var score_count = 0;
 
 function onDownKill(ele) {
   ele.innerHTML = "💀";
@@ -175,6 +177,8 @@ function onDownKill(ele) {
 function onUpKill(ele) {
   ele.innerHTML = "";
   ele.parentNode.removeChild(ele);
+  score_count++;
+  score_div.innerHTML = score_count; 
 }
 function onEnterKill(ele) {
   ele.innerHTML = "😲";
@@ -184,3 +188,5 @@ function onLeaveKill(ele) {
   ele.innerHTML = "😬";
   ele.style.cursor = "default";
 }
+
+
