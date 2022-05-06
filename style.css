@@ -179,6 +179,12 @@ h1 {
   /* border: 1px solid black; */
   position: absolute;
   animation: move-up 2s ease-in-out infinite alternate-reverse;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .circle2 {
   width: auto;
@@ -194,7 +200,13 @@ h1 {
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up 2.7s ease-in-out infinite alternate-reverse;
+  animation: move-up2 2.7s ease-in-out infinite alternate-reverse;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .circle3 {
   width: auto;
@@ -210,29 +222,63 @@ h1 {
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up 2.1s ease-in-out infinite alternate-reverse;
+  animation: move-up3 2.1s ease-in-out infinite alternate-reverse;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
-.circle:nth-child(2) {
+.circle4 {
+  width: auto;
+  height: 10px;
+  /* border: 1px solid black; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* background: radial-gradient(yellow, green); */
+  border-radius: 8px;
+  color: white;
+  /* border: 1px solid black; */
+  position: absolute;
+  animation: move-up4 3.1s ease-in-out infinite alternate-reverse;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.circle:nth-child(1) {
   background-color: transparent;
-  bottom: 300px;
-  left: 20px;
-  animation-name: move-up2;
+  /* bottom: 30px;
+  left: 20px; */
+  animation-name: move-up;
 }
 .circle2:nth-child(2) {
   background-color: transparent;
-  bottom: 50px;
-  left: 30px;
+  /* bottom: 50px;
+  left: 30px; */
   animation-name: move-up2;
 }
 .circle3:nth-child(3) {
   background-color: transparent;
-  bottom: 50px;
-  left: 0px;
+  /* bottom: 50px;
+  left: 0px; */
   animation-name: move-up3;
+}
+.circle3:nth-child(4) {
+  background-color: transparent;
+  /* bottom: 50px;
+  left: 200px; */
+  animation-name: move-up4;
 }
 @keyframes move-up {
   to {
-    transform: translateX(70px) translateY(55px);
+    transform: translateX(110px) translateY(-10px);
   }
 }
 @keyframes move-up2 {
@@ -242,7 +288,12 @@ h1 {
 }
 @keyframes move-up3 {
   to {
-    transform: translateX(-50px) translateY(30px);
+    transform: translateX(-80px) translateY(30px);
+  }
+}
+@keyframes move-up4 {
+  to {
+    transform: translateX(30px) translateY(50px);
   }
 }
 .worldContainer {
@@ -287,7 +338,16 @@ button:hover {
   min-height: 40px;
   padding: 0px;
   margin: 0px;
+  display: flex;
   background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 #colorbox {
@@ -302,6 +362,12 @@ button:hover {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 
   /* transform: rotate(20deg) skew(-30deg, -5deg); */
   /* transform: rotateZ(45deg) scale(75%); */
@@ -336,4 +402,7 @@ button:hover {
 ul {
   color: grey; 
   font-size: small;
+}
+#ccc{
+  font-size: xx-large;
 }

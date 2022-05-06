@@ -24,9 +24,14 @@ function duplicate() {
 
 // var cBoi = document.querySelector("#colorBoi");
 
-var addColor = 30;
+function onMouseLeaveEventHandler(ele) {
+  ele.innerHTML = "";
+}
+
+var addColor = 50;
 var addALpha = 0.2;
 function onMouseOverEventHandler(ele) {
+  ele.style.cursor = "pointer";
   var rgb_string;
   try {
     rgb_string = window
@@ -49,15 +54,19 @@ function onMouseOverEventHandler(ele) {
   // rgb_arr[3] = rgb_arr[3] + addALpha > 0.99 ? 0.99 : rgb_arr[3] + addALpha;
   switch (rgba_switch) {
     case "r":
+      // ele.innerHTML = "❤️";
       rgb_arr[0] = rgb_arr[0] + addColor > 255 ? 255 : rgb_arr[0] + addColor;
       break;
     case "g":
+      // ele.innerHTML = "🍃";
       rgb_arr[1] = rgb_arr[1] + addColor > 255 ? 255 : rgb_arr[1] + addColor;
       break;
     case "b":
+      // ele.innerHTML = "🌊";
       rgb_arr[2] = rgb_arr[2] + addColor > 255 ? 255 : rgb_arr[2] + addColor;
       break;
     default:
+      // ele.innerHTML = "🦜";
       rgb_arr[3] = rgb_arr[3] + addALpha > 0.99 ? 0.99 : rgb_arr[3] + addALpha;
   }
 
@@ -80,6 +89,7 @@ function onMouseOverEventHandler(ele) {
   // cBoi.style["background-color"] = "green";
 }
 function onClickEventHandler(ele) {
+  ele.innerHTML = "✖";
   // console.log("HERE");
   var rgb_string;
   try {
@@ -144,4 +154,33 @@ function decimalToHexString(number) {
   }
 
   return number.toString(16).toUpperCase();
+}
+
+function onMouseDownHandler(ele) {
+  ele.style.cursor = "none";
+}
+function onMouseUpHandler(ele) {
+  ele.style.cursor = "grab";
+}
+function onMouseEnterHandler(ele) {
+  ele.style.cursor = "grab";
+}
+function onMouseLeaveHandler(ele) {
+  ele.style.cursor = "default";
+}
+
+function onDownKill(ele) {
+  ele.innerHTML = "💀";
+}
+function onUpKill(ele) {
+  ele.innerHTML = "";
+  ele.parentNode.removeChild(ele);
+}
+function onEnterKill(ele) {
+  ele.innerHTML = "😲";
+  ele.style.cursor = "crosshair";
+}
+function onLeaveKill(ele) {
+  ele.innerHTML = "😬";
+  ele.style.cursor = "default";
 }
