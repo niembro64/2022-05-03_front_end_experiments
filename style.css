@@ -1,3 +1,10 @@
+:root {
+  --animation-time: 2s;
+  --z-level: 0;
+  --x-offset: 50;
+  --y-offset: 50; 
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -145,17 +152,20 @@ h1 {
 .card2-inner {
   width: inherit;
   height: inherit;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.309);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* backdrop-filter: blur(2px); */
-  backdrop-filter: saturate(20%) blur(1px) brightness(90%);
+  backdrop-filter: saturate(20%) blur(3px) brightness(90%);
   border-radius: 50%;
   /* box-shadow: rgba(0, 0, 0, .1) 5px 5px; */
 }
 .card2-inner2 {
-  width: 70%;
-  height: 70%;
-  background-color: rgba(255, 255, 255, 0.309);
+  width: 60%;
+  height: 60%;
+  z-index: 2;
+  background-color: rgb(251,197,60);
+  border: 3px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: saturate(20%) blur(2px) brightness(90%);
   border-radius: 50%;
@@ -167,6 +177,7 @@ h1 {
 .circle {
   width: auto;
   height: 10px;
+  z-index: var(--z-level);
   /* border: 1px solid black; */
 
   display: flex;
@@ -174,11 +185,12 @@ h1 {
   align-items: center;
   padding: 15px;
   /* background: radial-gradient(yellow, green); */
-  border-radius: 8px;
+  border-radius: 50%;
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up 2s ease-in-out infinite alternate-reverse;
+  animation: move-up var(--animation-time) ease-in-out infinite alternate-reverse;
+  /* animation: move-up 2s ease-in-out infinite alternate-reverse; */
 
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */
@@ -189,6 +201,7 @@ h1 {
 .circle2 {
   width: auto;
   height: 10px;
+  z-index: 0;
   /* border: 1px solid black; */
 
   display: flex;
@@ -212,6 +225,7 @@ h1 {
   width: auto;
   height: 10px;
   /* border: 1px solid black; */
+  z-index: 0;
 
   display: flex;
   justify-content: center;
@@ -233,6 +247,7 @@ h1 {
 .circle4 {
   width: auto;
   height: 10px;
+  z-index: 2;
   /* border: 1px solid black; */
 
   display: flex;
@@ -278,7 +293,8 @@ h1 {
 }
 @keyframes move-up {
   to {
-    transform: translateX(110px) translateY(-10px);
+    /* transform: translateX(110px) translateY(-10px); */
+    transform: translateX(var(--x-offset)) translateY(var(--y-offset));
   }
 }
 @keyframes move-up2 {
