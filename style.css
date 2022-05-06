@@ -190,7 +190,7 @@ h1 {
   /* border: 1px solid black; */
   position: absolute;
   animation: move-up var(--animation-time) ease-in-out infinite
-    alternate-reverse;
+    alternate;
   /* animation: move-up 2s ease-in-out infinite alternate-reverse; */
 
   user-select: none; /* supported by Chrome and Opera */
@@ -214,7 +214,7 @@ h1 {
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up2 2.7s ease-in-out infinite alternate-reverse;
+  animation: move-up2 2.7s ease-in-out infinite alternate;
 
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */
@@ -237,7 +237,7 @@ h1 {
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up3 2.1s ease-in-out infinite alternate-reverse;
+  animation: move-up3 2.1s ease-in-out infinite alternate;
 
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */
@@ -260,7 +260,7 @@ h1 {
   color: white;
   /* border: 1px solid black; */
   position: absolute;
-  animation: move-up4 3.1s ease-in-out infinite alternate-reverse;
+  animation: move-up4 3.1s ease-in-out infinite alternate;
 
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */

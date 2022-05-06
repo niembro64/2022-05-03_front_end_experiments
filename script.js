@@ -181,22 +181,24 @@ function onLeaveKill(ele) {
 
 var emo = document.querySelector("#ccc");
 function generateEmoji() {
-  var clone = emo.cloneNode(true);
-  var time = Math.random() * 2 + 0.5;
-  var y = Math.floor((Math.random() - 0.5) * 200);
-  var x = Math.floor((Math.random() - 0.5) * 200);
-  var z = Math.floor(Math.random() * 3);
-  var e = Math.floor(Math.random() * e_array.length);
-  console.log(x);
+  for (var i = 0; i < 10; i++) {
+    var clone = emo.cloneNode(true);
+    var time = Math.random() * 2 + 0.5;
+    var y = Math.floor((Math.random() - 0.5) * 200);
+    var x = Math.floor((Math.random() - 0.5) * 200);
+    var z = Math.floor(Math.random() * 2);
+    var e = Math.floor(Math.random() * e_array.length);
+    console.log(x);
 
-  clone.style.setProperty("--animation-time", time + "s");
-  clone.style.setProperty("--z-level", z);
-  clone.style.setProperty("--x-offset", x + "px");
-  clone.style.setProperty("--y-offset", y + "px");
-  clone.innerHTML = e_array[e];
+    clone.style.setProperty("--animation-time", time + "s");
+    clone.style.setProperty("--z-level", z);
+    clone.style.setProperty("--x-offset", x + "px");
+    clone.style.setProperty("--y-offset", y + "px");
+    clone.innerHTML = e_array[e];
 
-  // clone.id = "ccc";
-  emo.parentNode.appendChild(clone);
+    // clone.id = "ccc";
+    emo.parentNode.appendChild(clone);
+  }
 }
 
 var e_array = [
