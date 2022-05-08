@@ -1,11 +1,11 @@
 function deleteElement(ele) {
-  console.log("Test");
+  // console.log("Test");
   var b = document.querySelector("#bodyName");
   b.removeChild(ele.parentNode);
   // console.log("TEST");
 }
 function changeElement(ele) {
-  console.log("Test");
+  // console.log("Test");
   var a = document.querySelector("#firstName");
   a.innerHTML = "Changed";
 }
@@ -181,14 +181,25 @@ function onLeaveKill(ele) {
 
 var emo = document.querySelector("#ccc");
 function generateEmoji() {
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 3; i++) {
     var clone = emo.cloneNode(true);
-    var time = Math.random() * 2 + 0.5;
-    var y = Math.floor((Math.random() - 0.5) * 200);
-    var x = Math.floor((Math.random() - 0.5) * 200);
+    var time = Math.random() * 3 + 2;
+    // var x = Math.floor((Math.random() - 0.5) * 200);
+    var y = Math.random();
+    var x = Math.sqrt(1 - Math.pow(y,2));
+
+    y = y * (Math.random() >= 0.5 ? 1 : -1);
+    x = x * (Math.random() >= 0.5 ? 1 : -1);
+
+    console.log(y);
+    console.log(x);
+
+    y = Math.floor(y * 100);
+    x = Math.floor(x * 100);
+
     var z = Math.floor(Math.random() * 2);
     var e = Math.floor(Math.random() * e_array.length);
-    console.log(x);
+    // console.log(x);
 
     clone.style.setProperty("--animation-time", time + "s");
     clone.style.setProperty("--z-level", z);
