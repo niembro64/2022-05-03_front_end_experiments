@@ -45,28 +45,36 @@ function onMouseOverEventHandler(ele) {
   switch (rgba_switch) {
     case "r":
       // ele.innerHTML = "❤️";
-      var audio_a = new Audio("audio_a.mp3");
-      audio_a.play();
+      // var audio_a = new Audio("audio_a.mp3");
+      // audio_a.volume = bingvolume; 
+      // audio_a.play();
       rgb_arr[0] = rgb_arr[0] + addColor > 255 ? 255 : rgb_arr[0] + addColor;
       break;
     case "g":
       // ele.innerHTML = "🍃";
-      var audio_b = new Audio("audio_b.mp3");
-      audio_b.play();
+      // var audio_b = new Audio("audio_b.mp3");
+      // audio_b.volume = bingvolume; 
+      // audio_b.play();
       rgb_arr[1] = rgb_arr[1] + addColor > 255 ? 255 : rgb_arr[1] + addColor;
       break;
     case "b":
       // ele.innerHTML = "🌊";
-      var audio_d = new Audio("audio_d.mp3");
-      audio_d.play();
+      // var audio_d = new Audio("audio_d.mp3");
+      // audio_d.volume = bingvolume; 
+      // audio_d.play();
       rgb_arr[2] = rgb_arr[2] + addColor > 255 ? 255 : rgb_arr[2] + addColor;
       break;
     default:
       // ele.innerHTML = "🦜";
-      var audio_f = new Audio("audio_f.mp3");
-      audio_f.play();
+      // var audio_f = new Audio("audio_f.mp3");
+      // audio_f.volume = bingvolume; 
+      // audio_f.play();
       rgb_arr[3] = rgb_arr[3] + addALpha > 0.99 ? 0.99 : rgb_arr[3] + addALpha;
   }
+
+  var audio_w = new Audio("pad.mp3");
+  audio_w.volume = .1; 
+  audio_w.play();
 
   var new_rgb_string =
     "rgba(" +
@@ -78,6 +86,7 @@ function onMouseOverEventHandler(ele) {
     "," +
     rgb_arr[3] +
     ")";
+
 
   // console.log(new_rgb_string);
 
@@ -93,8 +102,6 @@ function onMouseOverEventHandler(ele) {
   // var audio_b = new Audio("audio_b.mp3");
   // audio_b.volume = Math.pow((rgb_arr[2] * rgb_arr[3]) / 255, 2);
   // audio_b.play();
-  var audio_w = new Audio("audio_w.mp3");
-  audio_w.play();
   // var audio_r = new Audio("audio_f.mp3");
   // var audio_g = new Audio("audio_a.mp3");
   // var audio_b = new Audio("audio_b.mp3");
@@ -115,7 +122,9 @@ function onMouseOverEventHandler(ele) {
   // cBoi.style["background-color"] = "green";
 }
 function onClickEventHandler(ele) {
-
+  var audio_w = new Audio("extreme.mp3");
+  audio_w.volume = .3; 
+  audio_w.play();
   ele.innerHTML = "✖";
   // console.log("HERE");
   var rgb_string;
@@ -161,24 +170,29 @@ function onClickEventHandler(ele) {
 }
 
 var rgba_switch = "a";
+var bingvolume = 0.5;
 
 function onClickR(ele) {
-  var audio_a = new Audio("audio_a.mp3");
+  var audio_a = new Audio("1.mp3");
+  audio_a.volume = bingvolume;
   audio_a.play();
   rgba_switch = "r";
 }
 function onClickG(ele) {
-  var audio_b = new Audio("audio_b.mp3");
+  var audio_b = new Audio("2.mp3");
+  audio_b.volume = bingvolume; 
   audio_b.play();
   rgba_switch = "g";
 }
 function onClickB(ele) {
-  var audio_d = new Audio("audio_d.mp3");
+  var audio_d = new Audio("3.mp3");
+  audio_d.volume = bingvolume
   audio_d.play();
   rgba_switch = "b";
 }
 function onClickA(ele) {
-  var audio_f = new Audio("audio_f.mp3");
+  var audio_f = new Audio("4.mp3");
+  audio_f.volume = bingvolume;
   audio_f.play();
   rgba_switch = "a";
 }
@@ -192,17 +206,20 @@ function decimalToHexString(number) {
 }
 
 function onMouseDownHandler(ele) {
-  var audio_b = new Audio("audio_b.mp3");
+  var audio_b = new Audio("glass1.mp3");
+  audio_b.volume = 0.3;
   audio_b.play();
   ele.style.cursor = "none";
 }
 function onMouseUpHandler(ele) {
-  var audio_a = new Audio("audio_a.mp3");
+  var audio_a = new Audio("pop1.mp3");
+  audio_a.volume = 0.1;
   audio_a.play();
   ele.style.cursor = "grab";
 }
 function onMouseEnterHandler(ele) {
-  var audio_a = new Audio("audio_a.mp3");
+  var audio_a = new Audio("pop1.mp3");
+  audio_a.volume = 0.1;
   audio_a.play();
   ele.style.cursor = "grab";
 }
@@ -215,7 +232,8 @@ var score_div = document.querySelector("#score");
 var score_count = 0;
 
 function onDownKill(ele) {
-  var audio_d = new Audio("audio_d.mp3");
+  var audio_d = new Audio("crash.mp3");
+  audio_d.volume = 0.4;
   audio_d.play();
   ele.innerHTML = "💀";
 }
@@ -226,7 +244,8 @@ function onUpKill(ele) {
   score_div.innerHTML = score_count;
 }
 function onEnterKill(ele) {
-  var audio_a = new Audio("audio_a.mp3");
+  var audio_a = new Audio("wiggle.mp3");
+  audio_a.volume = 0.05;
   audio_a.play();
   ele.innerHTML = "😲";
   ele.style.cursor = "crosshair";
@@ -238,7 +257,8 @@ function onLeaveKill(ele) {
 
 var emo = document.querySelector("#ccc");
 function generateEmoji() {
-  var audio_b = new Audio("audio_b.mp3");
+  var audio_b = new Audio("up.mp3");
+  audio_b.volume = 0.6;
   audio_b.play();
   for (var i = 0; i < 3; i++) {
     var clone = emo.cloneNode(true);
