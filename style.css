@@ -376,12 +376,13 @@ button:active {
 }
 
 #colorbox {
-  max-width: 320px;
+  max-width: 340px;
   background-color: rgba(0, 0, 0, 0);
+  border: 5px dashed black; 
 
   /* border: 1px solid black; */
-  padding: 0px;
-  margin: 0px;
+  padding: 10px 0px;
+  margin: 20px 0px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -72,9 +72,9 @@ function onMouseOverEventHandler(ele) {
       rgb_arr[3] = rgb_arr[3] + addALpha > 0.99 ? 0.99 : rgb_arr[3] + addALpha;
   }
 
-  var audio_w = new Audio("pad.mp3");
-  audio_w.volume = .1; 
-  audio_w.play();
+  // var audio_w = new Audio("pad.mp3");
+  // audio_w.volume = .1; 
+  // audio_w.play();
 
   var new_rgb_string =
     "rgba(" +
