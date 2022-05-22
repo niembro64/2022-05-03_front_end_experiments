@@ -17,6 +17,9 @@ var i = 0;
 function onMouseLeaveEventHandler(ele) {
   ele.innerHTML = "";
 }
+function onMouseLeaveEventHandlerEmoji(ele) {
+  // ele.innerHTML = "";
+}
 
 var addColor = 50;
 var addALpha = 0.2;
