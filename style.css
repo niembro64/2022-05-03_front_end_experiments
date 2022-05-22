@@ -179,32 +179,36 @@ h1 {
     -ms-user-select: none; /* Internet Explorer/Edge */
 
     background-color: rgb(251, 197, 60);
-    color: black; 
+    color: black;
     border: 3px solid black;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    transition: background-color 1s ease, color 1s ease, border 1s ease, box-shadow 1s ease;
-  }
+    transition: background-color 1s ease, color 1s ease, border 1s ease,
+        box-shadow 1s ease;
+}
 
 .card2-inner2:hover {
     background-color: wheat;
     color: red;
-    border: 3px solid red; 
+    border: 3px solid red;
 
     /* transition: background-color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
     transition: border 0.5s ease-in-out; */
     /* transition: background-color 0s ease, color 0s ease, border 0s ease; */
-    
+
     box-shadow: 0 4px 8px 0 rgb(255, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
-    transition: background-color 1s ease, color 1s ease, border 1s ease, box-shadow 1s ease;
+    transition: background-color 1s ease, color 1s ease, border 1s ease,
+        box-shadow 1s ease;
 }
 .card2-inner2:active {
     background-color: magenta;
     color: white;
     border: 3px solid white;
-    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(255, 255, 255, 0.3);
-    transition: background-color 0s ease, color 0s ease, border 0s ease, box-shadow 0s ease;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255),
+        0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 0s ease,
+        box-shadow 0s ease;
     /* transition: background-color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
     transition: border 0.5s ease-in-out; */
@@ -446,27 +450,157 @@ button:active {
     /* border: 3px solid black; */
     border-radius: 5px;
 }
-#buttons > button {
+#bbbr {
     width: 60px;
     height: 40px;
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
     color: black;
-
-    border-color: transparent;
+    background-color: white;
+    
+    border: 3px solid transparent;
     font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: background-color 1s ease, color 1s ease, border 1s ease,
+        box-shadow 1s ease;
 }
 
-#buttons > button:hover {
-    border-color: rgba(255, 255, 255, 0);
+#bbbr:hover {
+    color: white;
+    border: 3px solid transparent;
+    background-color: red;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 1s ease,
+        box-shadow 1s ease;
 }
-#buttons > button:active {
-    border-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+
+
+
+#bbbr:active {
+    border-color: magenta;
+    color: magenta;
+    border: 3px solid transparent;
+
+    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 0s ease,
+        box-shadow 0s ease;
+}
+#bbbg {
+    width: 60px;
+    height: 40px;
+    /* margin: 20px; */
+    /* border-radius: 10%; */
+    /* border-width: 10px; */
+    color: black;
+    background-color: white;
+    
+    border: 3px solid transparent;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: background-color 1s ease, color 1s ease, border 1s ease,
+        box-shadow 1s ease;
+}
+#bbbg:hover {
+    color: white;
+    border: 3px solid transparent;
+    background-color: green;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 1s ease,
+        box-shadow 1s ease;
+}
+#bbbg:active {
+    border-color: magenta;
+    color: magenta;
+    border: 3px solid transparent;
+
+    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 0s ease,
+        box-shadow 0s ease;
+}
+#bbbb {
+    width: 60px;
+    height: 40px;
+    /* margin: 20px; */
+    /* border-radius: 10%; */
+    /* border-width: 10px; */
+    color: black;
+    background-color: white;
+    
+    border: 3px solid transparent;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: background-color 1s ease, color 1s ease, border 1s ease,
+        box-shadow 1s ease;
+}
+#bbbb:hover {
+    color: white;
+    border: 3px solid transparent;
+    background-color: blue;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 1s ease,
+        box-shadow 1s ease;
+}
+#bbbb:active {
+    border-color: magenta;
+    color: magenta;
+    border: 3px solid transparent;
+
+    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 0s ease,
+        box-shadow 0s ease;
+}
+#bbba {
+    width: 60px;
+    height: 40px;
+    /* margin: 20px; */
+    /* border-radius: 10%; */
+    /* border-width: 10px; */
+    color: black;
+    background-color: white;
+    
+    border: 3px solid transparent;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: background-color 1s ease, color 1s ease, border 1s ease,
+        box-shadow 1s ease;
+}
+#bbba:hover {
+    color: white;
+    border: 3px solid transparent;
+    background-color: black;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 1s ease,
+        box-shadow 1s ease;
+}
+#bbba:active {
+    border-color: magenta;
+    color: magenta;
+    border: 3px solid transparent;
+
+    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    transition: background-color 0s ease, color 0s ease, border 0s ease,
+        box-shadow 0s ease;
 }
 
 ul {
@@ -507,3 +641,4 @@ h3 {
     border: 4px solid rgb(255, 0, 255);
     color: rgb(255, 0, 255);
 }
+
