@@ -18,7 +18,7 @@
     background: transparent;
     border-radius: 3px; 
     color: black;
-    width: 160px;
+    width: 130px;
     text-decoration: none;
     font-size: small;
     font-weight:bolder;
@@ -136,8 +136,8 @@ body {
         scale3d(140%, 140%, 110%);
     box-shadow: rgba(0, 0, 0, 1) 0px 0px, rgba(0, 0, 0, 0.6) 0px 0px,
         rgba(0, 0, 0, 0.4) 0px 0px, rgba(0, 0, 0, 0.2) 0px 0px;
-    transition: box-shadow 0.04s ease-in-out, background-color 0.25s ease-in-out,
-        transform 0.04s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out,
+        transform 0.25s ease-in-out;
 }
 .card:active > img {
     color: white;
