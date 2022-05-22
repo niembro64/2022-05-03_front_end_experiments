@@ -16,17 +16,16 @@
 .btnbtn {
     /* border: 1px solid black; */
     background: transparent;
-    border-radius: 3px; 
+    border-radius: 3px;
     color: black;
     width: 130px;
     text-decoration: none;
     font-size: small;
-    font-weight:bolder;
+    font-weight: bolder;
     text-align: center;
     color: black;
     padding: 5px 0px 5px 0px;
-    margin: 3px 1px 1px 1px; 
-    
+    margin: 3px 1px 1px 1px;
 }
 
 .btnbtn:before {
@@ -46,13 +45,22 @@
 .btnbtn:focus:before {
     visibility: visible;
     transform: scaleX(1);
+}
 
+#bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 body {
-
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
