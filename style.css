@@ -11,6 +11,9 @@
     font-family: "Roboto", sans-serif;
     position: relative;
     /* font-family: 'Comic Mono', 'Courier New', Courier, monospace; */
+    font-family: "Odibee Sans", cursive;
+    font-size: larger;
+    /* font-family: 'Macondo', cursive; */
 }
 
 .btnbtn {
@@ -163,6 +166,7 @@ p {
 
 h1 {
     margin: 0px 0px 10px 0px;
+    font-size: xx-large;
 }
 
 .card-group {
@@ -253,8 +257,7 @@ h1 {
     background-color: magenta;
     color: white;
     border: 3px solid white;
-    box-shadow: 0 4px 8px 0 rgb(255, 255, 255),
-        0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 0, 0, 0.3);
     transition: background-color 0s ease, color 0s ease, border 0s ease,
         box-shadow 0s ease;
     /* transition: background-color 0.5s ease-in-out;
