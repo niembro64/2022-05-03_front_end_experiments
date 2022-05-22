@@ -17,6 +17,9 @@ var i = 0;
 function onMouseLeaveEventHandler(ele) {
   ele.innerHTML = "";
 }
+function onMouseLeaveEventHandlerEmoji(ele) {
+  // ele.innerHTML = "";
+}
 
 var addColor = 50;
 var addALpha = 0.2;
@@ -244,7 +247,8 @@ function onUpKill(ele) {
   score_div.innerHTML = score_count;
 }
 function onEnterKill(ele) {
-  var audio_a = new Audio("wiggle.mp3");
+  var audio_a = new Audio("gasp.wav");
+  // var audio_a = new Audio("wiggle.mp3");
   audio_a.volume = 0.05;
   audio_a.play();
   ele.innerHTML = "😲";
@@ -325,3 +329,27 @@ var e_array = [
 //   // original.parentNode.appendChild;
 //   // original.appendChild(clone);
 // }
+
+
+
+/////////////
+
+
+
+(function(){
+
+  var parallax = document.querySelectorAll("body"),
+      speed = 0.5;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
