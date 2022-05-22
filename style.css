@@ -27,7 +27,7 @@
     background: rgba(250, 250, 250, 0);
     border-radius: 3px;
 
-    width: 130px;
+    width: 110px;
     text-decoration: none;
     font-size: small;
     font-weight: bolder;
@@ -54,11 +54,14 @@
 .btnbtn:focus:before {
     visibility: visible;
     transform: scaleX(1);
+    color: black;
 }
 
 #bar0 {
     z-index: 99;
     position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,9 +73,23 @@
     padding: 0px 0px 8px 0px;
     margin: 0px 0px 0px 0px;
 
-    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.381),
-        0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: color 1s ease-in-out, background-color 1s ease-in-out, width 1s ease-in-out, box-shadow 1s ease-in-out, border-radius 1s ease-in-out;
 }
+#bar0:hover {
+    width: 150px;
+
+    /* border: 3px black solid; */
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    background-color: rgb(106, 0, 106); 
+
+    box-shadow: 0 0 1000px rgb(255, 255, 255);
+
+    /* transition: color 1s ease, background-color 1s ease, width 1s ease, box-shadow 1s ease; */
+    transition: color 1s ease-in-out, background-color 1s ease-in-out, width 1s ease-in-out, box-shadow 1s ease-in-out, border-radius 1s ease-in-out;
+}
+
 #bar {
     display: flex;
     flex-direction: column;
@@ -250,6 +267,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
 
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
