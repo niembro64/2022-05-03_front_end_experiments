@@ -336,7 +336,7 @@ var e_array = [
 //////////////
 
 // var top = document.querySelector("#btnbtn");
-const coolSlide = (ele) => {
+function coolSlide (ele)  {
   ele.parentNode.style["width"] = "170px"; 
   ele.parentNode.style["border-bottom-left-radius"] = "20px"; 
   ele.parentNode.style["border-bottom-right-radius"] = "20px"; 
@@ -344,7 +344,7 @@ const coolSlide = (ele) => {
   ele.parentNode.style["box-shadow"] = "0 0px 300px 0 rgb(255, 255, 155)";
 
 };
-const coolSlideOut = (ele) => {
+function coolSlideOut (ele) {
   ele.parentNode.style["width"] = "100%"; 
   ele.parentNode.style["border-bottom-left-radius"] = "0px"; 
   ele.parentNode.style["border-bottom-right-radius"] = "0px"; 
