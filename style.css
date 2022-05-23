@@ -776,7 +776,6 @@ h2 > a:focus:before {
     align-items: center; 
     font-size: 130px; 
 
-    text-shadow: -1px 0 rgb(231, 227, 227), 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 #divtitle {
