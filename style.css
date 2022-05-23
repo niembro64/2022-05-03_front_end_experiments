@@ -68,27 +68,26 @@
     background-color: black;
     color: white;
 
-    /* background-color: white; */
+
     width: 100%;
     padding: 0px 0px 8px 0px;
     margin: 0px 0px 0px 0px;
 
     box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
-    transition: color 1s ease-in-out, background-color 1s ease-in-out, width 1s ease-in-out, box-shadow 1s ease-in-out, border-radius 1s ease-in-out;
+    transition: color .25s ease, background-color .25s ease, width .25s ease, box-shadow .25s ease, border-radius .25s ease; 
 }
-#bar0:hover {
+/* #bar0:hover {
     width: 150px;
 
-    /* border: 3px black solid; */
     border-bottom-left-radius: 10px; 
     border-bottom-right-radius: 10px; 
     background-color: rgb(106, 0, 106); 
 
     box-shadow: 0 0 1000px rgb(255, 255, 255);
 
-    /* transition: color 1s ease, background-color 1s ease, width 1s ease, box-shadow 1s ease; */
-    transition: color 1s ease-in-out, background-color 1s ease-in-out, width 1s ease-in-out, box-shadow 1s ease-in-out, border-radius 1s ease-in-out;
-}
+
+    transition: color .25s ease-in-out, background-color .25s ease-in-out, width .25s ease-in-out, box-shadow .25s ease-in-out, border-radius .25s ease-in-out;
+}  */
 
 #bar {
     display: flex;
