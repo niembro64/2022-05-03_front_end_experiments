@@ -340,7 +340,7 @@ function coolSlide (ele)  {
   ele.parentNode.style["width"] = "170px"; 
   ele.parentNode.style["border-bottom-left-radius"] = "20px"; 
   ele.parentNode.style["border-bottom-right-radius"] = "20px"; 
-  ele.parentNode.style["background-color"] = "magenta";
+  ele.parentNode.style["background-color"] = "rgb(13,110,253)";
   ele.parentNode.style["box-shadow"] = "0 0px 300px 0 rgb(255, 255, 155)";
 
 };
