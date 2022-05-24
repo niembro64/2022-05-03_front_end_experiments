@@ -266,7 +266,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-size: medium;
     font-weight: bolder;
 
     user-select: none; /* supported by Chrome and Opera */
