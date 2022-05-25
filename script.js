@@ -24,7 +24,9 @@ function onMouseLeaveEventHandlerEmoji(ele) {
 var addColor = 50;
 var addALpha = 0.2;
 function onMouseOverEventHandler(ele) {
-    ele.style.cursor = "pointer";
+    // ele.style.cursor = "pointer";
+    // document.getElementsByTagName("body")[0].style.cursor = "url('1_red.cur'), auto";
+
     var rgb_string;
     try {
         rgb_string = window
@@ -177,26 +179,39 @@ function onClickEventHandler(ele) {
 
 var rgba_switch = "a";
 var bingvolume = 0.5;
+// document.getElementsByTagName("body")[0].style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
+
+document.getElementsByTagName("body")[0].style.cursor = "url('./aaa_white.cur'), auto";
 
 function onClickR(ele) {
+    document.getElementsByTagName("body")[0].style.cursor =
+        "url('1_red.cur'), auto";
     var audio_a = new Audio("1.mp3");
     audio_a.volume = bingvolume;
     audio_a.play();
     rgba_switch = "r";
+    // ele.style.cursor= url("./RED.cur')
+    // document.body.style.cursor = "url('RED.cur'), auto";
 }
 function onClickG(ele) {
+    document.getElementsByTagName("body")[0].style.cursor =
+        "url('1_green.cur'), auto";
     var audio_b = new Audio("2.mp3");
     audio_b.volume = bingvolume;
     audio_b.play();
     rgba_switch = "g";
 }
 function onClickB(ele) {
+    document.getElementsByTagName("body")[0].style.cursor =
+        "url('1_blue.cur'), auto";
     var audio_d = new Audio("3.mp3");
     audio_d.volume = bingvolume;
     audio_d.play();
     rgba_switch = "b";
 }
 function onClickA(ele) {
+    document.getElementsByTagName("body")[0].style.cursor =
+        "url('aaa_white.cur'), auto";
     var audio_f = new Audio("4.mp3");
     audio_f.volume = bingvolume;
     audio_f.play();
@@ -486,3 +501,16 @@ function onMouseDownDesign(ele) {
         });
     };
 })();
+
+function onEnterR(ele){
+    ele.style.cursor = "url('./1_red.cur'), auto";
+}
+function onEnterG(ele){
+    ele.style.cursor = "url('./1_green.cur'), auto";
+}
+function onEnterB(ele){
+    ele.style.cursor = "url('./1_blue.cur'), auto";
+}
+function onEnterA(ele){
+    ele.style.cursor = "url('./aaa_white.cur'), auto";
+}

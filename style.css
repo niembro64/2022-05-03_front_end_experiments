@@ -95,8 +95,8 @@
     align-items: center;
     background-color: black;
     color: white;
-    border-bottom-left-radius: 40px ;
-    border-bottom-right-radius: 40px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 
     /* background-color: white; */
     width: 400px;
@@ -244,7 +244,7 @@ li:hover {
     flex-wrap: wrap;
 }
 
-.everything{
+.everything {
     height: 100%;
     width: 95%;
     margin: 10px;
@@ -259,13 +259,13 @@ li:hover {
     width: 380px;
     height: 500px;
     /* background-color: rgb(255, 255, 255); */
-    margin: 5px 5px; 
+    margin: 5px 5px;
     /* border-radius: 100px;
     border: 3px solid black;  */
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center; 
+    align-items: center;
 }
 
 .card2 {
@@ -504,11 +504,10 @@ li:hover {
 }
 
 button {
-    margin: 2px 5px;
-    padding: 0px 15px;
+
     background-color: white;
     border: 0px;
-    border-radius: 3px;
+    border-radius: 30px;
 }
 button:hover {
     border: 0px;
@@ -554,7 +553,7 @@ button:active {
 #colorbox {
     max-width: 240px;
     background-color: rgba(0, 0, 0, 0);
-    border: 5px dashed black;
+    border: 8px dashed rgba(0, 0, 0, 0.5);
     /* border-radius: 10px; */
 
     /* border: 1px solid black; */
@@ -582,19 +581,26 @@ button:active {
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
     padding: 3px;
     margin: 10px;
-    /* border: 3px solid black; */
     border-radius: 5px;
+    /* border: 3px solid black; */
 }
 #bbbr {
-    width: 60px;
+    z-index: 3;
+    width: 45px;
     height: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 0px 0px 0px 5px;
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
     color: black;
     background-color: white;
+    margin: 0px;
 
     border: 3px solid transparent;
     font-size: xx-large;
@@ -602,17 +608,20 @@ button:active {
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+   
+
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
     transition: background-color 1s ease, color 1s ease, border 1s ease,
         box-shadow 1s ease;
 }
 
 #bbbr:hover {
+    /* caret-color: red;  */
     color: white;
     border: 3px solid transparent;
     background-color: red;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -622,18 +631,21 @@ button:active {
     color: magenta;
     border: 3px solid transparent;
 
-    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    /* box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 0s ease,
         box-shadow 0s ease;
 }
 #bbbg {
-    width: 60px;
+    z-index: 2;
+    width: 40px;
     height: 40px;
+    margin: 0px;
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
     color: black;
     background-color: white;
+    border-radius: 0px; 
 
     border: 3px solid transparent;
     font-size: xx-large;
@@ -641,7 +653,7 @@ button:active {
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
     transition: background-color 1s ease, color 1s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -650,7 +662,7 @@ button:active {
     border: 3px solid transparent;
     background-color: green;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -659,16 +671,17 @@ button:active {
     color: magenta;
     border: 3px solid transparent;
 
-    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    /* box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 0s ease,
         box-shadow 0s ease;
 }
 #bbbb {
-    width: 60px;
+    width: 45px;
     height: 40px;
     /* margin: 20px; */
-    /* border-radius: 10%; */
-    /* border-width: 10px; */
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 0px 5px 0px 0px;
     color: black;
     background-color: white;
 
@@ -678,7 +691,7 @@ button:active {
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
     transition: background-color 1s ease, color 1s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -687,7 +700,7 @@ button:active {
     border: 3px solid transparent;
     background-color: blue;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -696,13 +709,14 @@ button:active {
     color: magenta;
     border: 3px solid transparent;
 
-    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    /* box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 0s ease,
         box-shadow 0s ease;
 }
 #bbba {
-    width: 60px;
-    height: 40px;
+    width: 55px;
+    height: 50px;
+    margin: 0px 0px 0px 20px ;
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
@@ -715,7 +729,7 @@ button:active {
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
     transition: background-color 1s ease, color 1s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -724,7 +738,7 @@ button:active {
     border: 3px solid transparent;
     background-color: black;
 
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 1s ease,
         box-shadow 1s ease;
 }
@@ -733,7 +747,7 @@ button:active {
     color: magenta;
     border: 3px solid transparent;
 
-    box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    /* box-shadow: 0 4px 8px 0 magenta, 0 6px 20px 0 rgba(255, 255, 255, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 0s ease,
         box-shadow 0s ease;
 }
@@ -773,9 +787,9 @@ h3 {
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-h2{
-    font-size:x-large;
-    margin: 0px 0px 20px 0px ;
+h2 {
+    font-size: x-large;
+    margin: 0px 0px 20px 0px;
 }
 h2 > a:before {
     content: "";
@@ -820,7 +834,7 @@ h2 > a:focus:before {
     justify-content: center;
     align-items: center;
     font-size: 80px;
-    border-radius: 10px; 
+    border-radius: 10px;
 
     /* transform: skew(30deg); */
     /* transition: .25s ease, color .25s ease;  */
@@ -855,10 +869,11 @@ h2 > a:focus:before {
     margin: 0px 0px -40px 0px;
 }
 
-ul,li {
-    font-size:small;
+ul,
+li {
+    font-size: small;
 }
 
-p{
+p {
     font-size: small;
 }
