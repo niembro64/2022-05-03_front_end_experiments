@@ -439,7 +439,7 @@ function onMouseLeaveDesign(ele) {
 }
 function onMouseUpDesign(ele) {
     // ele.style.cursor = "grab";
-    ele.style.cursor = "pointer";
+    // ele.style.cursor = "pointer";
     ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
     // ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
@@ -451,7 +451,7 @@ function onMouseUpDesign(ele) {
     // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
 }
 function onMouseDownDesign(ele) {
-    ele.style.cursor = "grab";
+    // ele.style.cursor = "grab";
     var pong = new Audio("hit07.wav");
     pong.volume = 1;
     pong.play();
