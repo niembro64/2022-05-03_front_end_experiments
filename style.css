@@ -790,7 +790,7 @@ h2 > a:focus:before {
     width: 310px;
     height: 300px;
     left: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0); 
     color: rgb(255, 255, 255);
     mix-blend-mode: luminosity;
     /* border: 1px white solid;  */
@@ -802,19 +802,19 @@ h2 > a:focus:before {
 
     /* transform: skew(30deg); */
     /* transition: .25s ease, color .25s ease;  */
-    transition: text-shadow 9s ease, color 9s ease;
+    transition: text-shadow 9s ease, color 9s ease, background-color 0s ease;
 }
 
 #title:hover {
     /* font-weight: 900; */
 
     /* color: magenta; */
-    transition: text-shadow 2s ease, color 9s ease;
+    transition: text-shadow 2s ease, color 9s ease, background-color 0s ease;
 }
 #title:active {
     /* color: white; */
     /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); */
-    transition: text-shadow 0s ease, color 0s ease;
+    transition: text-shadow 0s ease, color 0s ease, background-color 0s ease;
 }
 
 #divtitle {
