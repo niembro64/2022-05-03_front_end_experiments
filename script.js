@@ -390,7 +390,7 @@ function onMouseEnterDesign(ele) {
     ele.style.cursor = "pointer";
     // ele.style["color"] = "rgba(0,0,0, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
-    ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
+    ele.style["text-shadow"] = "0px 0px 5px rgba(255, 255, 255, 1)";
 
     clearInterval(fadeout);
     fadeout_interval = Infinity;
@@ -447,7 +447,7 @@ function onMouseLeaveDesign(ele) {
 }
 function onMouseUpDesign(ele) {
     // ele.style.cursor = "pointer";
-    ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
+    ele.style["text-shadow"] = "0px 0px 5px rgba(255, 255, 255, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
     // ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
     // ele.style["color"] = "rgba(255, 255, 255, 1)";
@@ -461,7 +461,7 @@ function onMouseDownDesign(ele) {
     var pong = new Audio("z00.wav");
     pong.volume = 1;
     pong.play();
-    ele.style["text-shadow"] = "0px 0px 24px rgba(255, 255, 255, 1)";
+    ele.style["text-shadow"] = "0px 0px 8px rgba(255, 255, 255, 1)";
     // ele.style["color"] = "rgba(0,0,0, .5)";
     ele.style["color"] = "rgba(0,0,0, .0)";
     // ele.style["filter"] = "inverted";
