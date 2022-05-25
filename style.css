@@ -210,24 +210,25 @@ p {
 h1 {
     margin: 0px 0px 10px 0px;
     font-size: xx-large;
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     font-weight: 500;
-    transition: 1s ease; 
     color: black; 
+    transition: 1s ease; 
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 1s ease, text-shadow 1s ease,  color 1s ease; 
 }
 h1:hover{
     
     /* font-weight: 900; */
     color: magenta; 
     
-    transition: .2s ease, text-shadow 1s ease,  color 1s ease; 
+    transition: .25s ease, text-shadow .25s ease,  color .25s ease; 
     
 }
 h1:active {
     
     color: white;
-    text-shadow: 0px 0px 5px magenta;
-    transition: .2s ease, text-shadow 0s ease, color 0s ease; 
+    /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); */
+    transition: .0s ease, text-shadow 0s ease, color 0s ease; 
 }
 p {
     /* margin: 0px 0px 10px 0px; */
@@ -817,7 +818,7 @@ h2 > a:focus:before {
     height: 300px; 
     left: center; 
     background-color: rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
     mix-blend-mode: luminosity; 
     /* border: 1px white solid;  */
 

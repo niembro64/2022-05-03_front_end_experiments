@@ -242,12 +242,14 @@ function onDownKill(ele) {
     audio_d.volume = 0.4;
     audio_d.play();
     ele.innerHTML = "💀";
+    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 0, 0, 1)";
 }
 function onUpKill(ele) {
     ele.innerHTML = "";
     ele.parentNode.removeChild(ele);
     score_count++;
     score_div.innerHTML = score_count;
+    ele.style["text-shadow"] = "0px 0px 0px rgba(0, 0, 0, 0)";
 }
 function onEnterKill(ele) {
     var audio_a = new Audio("gasp.wav");
@@ -256,10 +258,12 @@ function onEnterKill(ele) {
     audio_a.play();
     ele.innerHTML = "😲";
     ele.style.cursor = "crosshair";
+    ele.style["text-shadow"] = "0px 0px 10px rgba(0,0,0, 1)";
 }
 function onLeaveKill(ele) {
     ele.innerHTML = "😬";
     ele.style.cursor = "default";
+    ele.style["text-shadow"] = "0px 0px 0px rgba(0, 0, 0, 0)";
 }
 
 var emo = document.querySelector("#ccc");
@@ -358,13 +362,33 @@ function onMouseEnterDesign(ele) {
     // ele.style["filter"] = "inverted";
     // ele.style["transform"] = "skew(30deg)";
     // ele.style["box-shadow"] = "0 0px 20px 0 rgb(13,110,253)";
-    ele.style["color"] = "rgba(255, 255, 255, 1)";
+    ele.style["color"] = "rgba(255, 255, 255, 0.5)";
+    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
 }
 function onMouseLeaveDesign(ele) {
     // ele.style["filter"] = "inverted";
     // ele.style["transform"] = "skew(0deg)";
     // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
+    ele.style["color"] = "rgba(255, 255, 255, 1)";
+    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 0.5)";
+}
+function onMouseDownDesign(ele) {
+    ele.style["text-shadow"] = "0px 0px 20px rgba(255, 255, 255, 1)";
+    ele.style["color"] = "rgba(255, 255, 255, 1)";
+    // ele.style["filter"] = "inverted";
+    // ele.style["transform"] = "skew(0deg)";
+    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
+    // ele.style["color"] = "rgba(255, 255, 255, 0.0)";
+    // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
+}
+function onMouseUpDesign(ele) {
+    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
     ele.style["color"] = "rgba(255, 255, 255, 0.5)";
+    // ele.style["filter"] = "inverted";
+    // ele.style["transform"] = "skew(0deg)";
+    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
+    // ele.style["color"] = "rgba(255, 255, 255, 1)";
+    // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
 }
 
 //////////
