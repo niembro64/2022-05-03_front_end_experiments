@@ -363,17 +363,14 @@ function coolSlideOut(ele) {
 var pongr = new Audio("repeat07.wav");
 pongr.volume = 0;
 pongr.loop = true;
-setTimeout(() => pongr.play(), 0);
 
 var pongl = new Audio("repeat07.wav");
 pongl.volume = 0;
 pongl.loop = true;
-setTimeout(() => pongl.play(), 400);
 
 var pongu = new Audio("repeat07.wav");
 pongu.volume = 0;
 pongu.loop = true;
-setTimeout(() => pongu.play(), 700);
 
 var maxvolume = 300;
 
@@ -381,6 +378,9 @@ var volx100 = 0;
 var fadein_interval;
 var fadein;
 function onMouseEnterDesign(ele) {
+    setTimeout(() => pongr.play(), 0);
+    setTimeout(() => pongl.play(), 400);
+    setTimeout(() => pongu.play(), 700);
     ele.style.cursor = "pointer";
     // ele.style["color"] = "rgba(0,0,0, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
@@ -408,7 +408,8 @@ function onMouseEnterDesign(ele) {
 var fadeout_interval;
 var fadeout;
 function onMouseLeaveDesign(ele) {
-    ele.style.cursor = "default";    ele.style["color"] = "rgba(255, 255, 255, 1)";
+    ele.style.cursor = "default";
+    ele.style["color"] = "rgba(255, 255, 255, 1)";
     ele.style["text-shadow"] = "0px 0px 0px rgba(255, 255, 255, 1)";
 
     clearInterval(fadein);
@@ -439,7 +440,6 @@ function onMouseLeaveDesign(ele) {
     // ele.style["text-shadow"] = "0px 0px 8px rgba(255, 255, 255, .5)";
 }
 function onMouseUpDesign(ele) {
-
     // ele.style.cursor = "pointer";
     ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
