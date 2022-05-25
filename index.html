@@ -36,7 +36,6 @@
                     onmouseleave="onMouseLeaveDesign(this)"
                     onmousedown="onMouseDownDesign(this)"
                     onmouseup="onMouseUpDesign(this)"
-     
                 >
                     Design
                 </h1>
@@ -45,25 +44,27 @@
             <ul>
                 <li>Meant for desktop.</li>
                 <li>Made with vanilla HTML, CSS, & JS.</li>
-                <li>No special libraries were used.</li>
-                <li>Everything is original content.</li>
+
+          
             </ul>
         </div>
-        <h1>Emoji Hunt 🎯</h1>
-        <ul>
-            <li>Mouse over to scare them.</li>
-            <li>Click to generate more. </li>
-            <li>Shoot 'em up!</li>
-        </ul>
-        <div id="scoreboard">
-            <b
-                ><h3>SCORE: <span id="score">0</span></h3></b
-            >
-        </div>
-        <!-- <button onclick="generateEmoji()" id="generate">
+        <div class="everything">
+            <div class="linebox">
+            <h2>Emoji Hunt</h2>
+            <ul>
+                <li>Mouse over to scare them.</li>
+                <li>Click to generate more.</li>
+                <li>Shoot 'em up!</li>
+            </ul>
+            <div id="scoreboard">
+                <b
+                    ><h3>SCORE: <span id="score">0</span></h3></b
+                >
+            </div>
+            <!-- <button onclick="generateEmoji()" id="generate">
             <b>Generate 3</b>
         </button> -->
-        <!-- <p><i>coming soon</i></p>
+            <!-- <p><i>coming soon</i></p>
     <div id="bodyName">
       <div>
         <div id="dupParent" onmouseenter="duplicate()">
@@ -76,534 +77,536 @@
         <button onmousedown="changeElement(this)">Change</button>
       </div>
     </div>
-    <div class="line"></div> -->
-        <div class="worldContainer">
-            <article class="card2">
+    <div class="linebox"></div> -->
+            <div class="worldContainer">
+                <article class="card2">
+                    <div
+                        onmouseenter="onEnterKill(this)"
+                        onmouseleave="onLeaveKill(this)"
+                        onmousedown="onDownKill(this)"
+                        onmouseup="onUpKill(this)"
+                        id="ccc"
+                        class="circle"
+                    >
+                        🙄
+                    </div>
+                    <div
+                        onmouseenter="onEnterKill(this)"
+                        onmouseleave="onLeaveKill(this)"
+                        onmousedown="onDownKill(this)"
+                        onmouseup="onUpKill(this)"
+                        id="ccc"
+                        class="circle2"
+                    >
+                        😅
+                    </div>
+                    <div
+                        onmouseenter="onEnterKill(this)"
+                        onmouseleave="onLeaveKill(this)"
+                        onmousedown="onDownKill(this)"
+                        onmouseup="onUpKill(this)"
+                        id="ccc"
+                        class="circle3"
+                    >
+                        🤔
+                    </div>
+                    <div
+                        onmouseenter="onEnterKill(this)"
+                        onmouseleave="onLeaveKill(this)"
+                        onmousedown="onDownKill(this)"
+                        onmouseup="onUpKill(this)"
+                        id="ccc"
+                        class="circle4"
+                    >
+                        😂
+                    </div>
+                    <div class="card2-inner"></div>
+                    <div
+                        class="card2-inner2"
+                        onclick="generateEmoji()"
+                        onmouseover="onMouseOverEventHandler(this)"
+                        onmouseleave="onMouseLeaveEventHandlerEmoji(this)"
+                    >
+                        <b>Click!</b>
+                    </div>
+                </article>
+            </div>
+            <!-- <p>Object generation, manip., destruction.</p> -->
+        </div>
+            <!-- <div class="linebox"></div> -->
+            <div class="linebox">
+            <h2>Card Grab</h2>
+            <ul>
+                <li>Mouse over a card to pick it up.</li>
+                <li>Click and hold to highlight it.</li>
+            </ul>
+            <div class="card-group">
                 <div
-                    onmouseenter="onEnterKill(this)"
-                    onmouseleave="onLeaveKill(this)"
-                    onmousedown="onDownKill(this)"
-                    onmouseup="onUpKill(this)"
-                    id="ccc"
-                    class="circle"
+                    onmousedown="onMouseDownHandler(this)"
+                    onmouseup="onMouseUpHandler(this)"
+                    onmouseenter="onMouseEnterHandler(this)"
+                    onmouseleave="onMouseLeaveHandler(this)"
+                    class="card"
                 >
-                    🙄
+                    <img
+                        class="apple"
+                        src="https://freepngimg.com/download/pear/6-2-pear-transparent.png"
+                        alt="pear"
+                    />
+                    <h1>Pear</h1>
                 </div>
                 <div
-                    onmouseenter="onEnterKill(this)"
-                    onmouseleave="onLeaveKill(this)"
-                    onmousedown="onDownKill(this)"
-                    onmouseup="onUpKill(this)"
-                    id="ccc"
-                    class="circle2"
+                    onmousedown="onMouseDownHandler(this)"
+                    onmouseup="onMouseUpHandler(this)"
+                    onmouseenter="onMouseEnterHandler(this)"
+                    onmouseleave="onMouseLeaveHandler(this)"
+                    class="card"
                 >
-                    😅
+                    <img
+                        class="apple"
+                        src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Fruit-PNG/Apple_Transparent_PNG_Clip_Art_Image.png?m=1526161600"
+                        alt="apple"
+                    />
+                    <h1>Apple</h1>
                 </div>
                 <div
-                    onmouseenter="onEnterKill(this)"
-                    onmouseleave="onLeaveKill(this)"
-                    onmousedown="onDownKill(this)"
-                    onmouseup="onUpKill(this)"
-                    id="ccc"
-                    class="circle3"
+                    onmousedown="onMouseDownHandler(this)"
+                    onmouseup="onMouseUpHandler(this)"
+                    onmouseenter="onMouseEnterHandler(this)"
+                    onmouseleave="onMouseLeaveHandler(this)"
+                    class="card"
                 >
-                    🤔
+                    <img
+                        class="apple"
+                        src="https://www.pngall.com/wp-content/uploads/2016/04/Banana-Free-Download-PNG.png"
+                        alt="Banana"
+                    />
+                    <h1>Banana</h1>
                 </div>
                 <div
-                    onmouseenter="onEnterKill(this)"
-                    onmouseleave="onLeaveKill(this)"
-                    onmousedown="onDownKill(this)"
-                    onmouseup="onUpKill(this)"
-                    id="ccc"
-                    class="circle4"
+                    onmousedown="onMouseDownHandler(this)"
+                    onmouseup="onMouseUpHandler(this)"
+                    onmouseenter="onMouseEnterHandler(this)"
+                    onmouseleave="onMouseLeaveHandler(this)"
+                    class="card"
                 >
-                    😂
+                    <img
+                        class="apple"
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dbpw976-d54d26f7-047e-484d-8331-fc25d949b646.png/v1/fill/w_900,h_1480,strp/pineapple_on_a_transparent_background__by_prussiaart_dbpw976-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ4MCIsInBhdGgiOiJcL2ZcLzI1ZDQ1MDE0LThjYzMtNGM5OC1iMDJjLTVhMGNmM2E1NWRkZFwvZGJwdzk3Ni1kNTRkMjZmNy0wNDdlLTQ4NGQtODMzMS1mYzI1ZDk0OWI2NDYucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HtGLNBl8wt1r5kXOAaz1pwziAeRMYkcO7howecE1kto"
+                        alt="Pineapple"
+                    />
+                    <h1>Pineapple</h1>
                 </div>
-                <div class="card2-inner"></div>
+            </div>
+            <!-- <p>Aesthetics manipulation.</p> -->
+            <!-- <p>Made with vanilla CSS, no special libraries.</p> -->
+            </div>
+            <div class="linebox">
+            <h2>Pixel Play</h2>
+            <ul>
+                <li>Select value to be modified.</li>
+                <li>Mouse over pixels to modify.</li>
+                <li>Click to reset pixel.</li>
+            </ul>
+
+            <div id="colorbox">
                 <div
-                    class="card2-inner2"
-                    onclick="generateEmoji()"
+                    onmousedown="onClickEventHandler(this)"
                     onmouseover="onMouseOverEventHandler(this)"
-                    onmouseleave="onMouseLeaveEventHandlerEmoji(this)"
-                >
-                    <b>Click!</b>
-                </div>
-            </article>
-        </div>
-        <p>Object generation, manip., destruction.</p>
-        <div class="line"></div>
-        <!-- <div class="line"></div> -->
-        <h1>Card Grab 🍇</h1>
-        <ul>
-            <li>Mouse over a card to pick it up.</li>
-            <li>Click and hold to highlight it.</li>
-        </ul>
-        <div class="card-group">
-            <div
-                onmousedown="onMouseDownHandler(this)"
-                onmouseup="onMouseUpHandler(this)"
-                onmouseenter="onMouseEnterHandler(this)"
-                onmouseleave="onMouseLeaveHandler(this)"
-                class="card"
-            >
-                <img
-                    class="apple"
-                    src="https://freepngimg.com/download/pear/6-2-pear-transparent.png"
-                    alt="pear"
-                />
-                <h1>Pear</h1>
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <div
+                    onmousedown="onClickEventHandler(this)"
+                    onmouseover="onMouseOverEventHandler(this)"
+                    onmouseleave="onMouseLeaveEventHandler(this)"
+                    id="colorBoi"
+                ></div>
+                <!-- <div>--------------------------------------</div> -->
             </div>
-            <div
-                onmousedown="onMouseDownHandler(this)"
-                onmouseup="onMouseUpHandler(this)"
-                onmouseenter="onMouseEnterHandler(this)"
-                onmouseleave="onMouseLeaveHandler(this)"
-                class="card"
-            >
-                <img
-                    class="apple"
-                    src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Fruit-PNG/Apple_Transparent_PNG_Clip_Art_Image.png?m=1526161600"
-                    alt="apple"
-                />
-                <h1>Apple</h1>
+            <div id="buttons">
+                <button id="bbbr" onclick="onClickR(this)">R</button>
+                <button id="bbbg" onclick="onClickG(this)">G</button>
+                <button id="bbbb" onclick="onClickB(this)">B</button>
+                <button id="bbba" onclick="onClickA(this)">A</button>
             </div>
-            <div
-                onmousedown="onMouseDownHandler(this)"
-                onmouseup="onMouseUpHandler(this)"
-                onmouseenter="onMouseEnterHandler(this)"
-                onmouseleave="onMouseLeaveHandler(this)"
-                class="card"
-            >
-                <img
-                    class="apple"
-                    src="https://www.pngall.com/wp-content/uploads/2016/04/Banana-Free-Download-PNG.png"
-                    alt="Banana"
-                />
-                <h1>Banana</h1>
+            <!-- <p>Made with vanilla JavaScript, no special libraries.</p> -->
+            <!-- <p>Objects and color.</p> -->
             </div>
-            <div
-                onmousedown="onMouseDownHandler(this)"
-                onmouseup="onMouseUpHandler(this)"
-                onmouseenter="onMouseEnterHandler(this)"
-                onmouseleave="onMouseLeaveHandler(this)"
-                class="card"
-            >
-                <img
-                    class="apple"
-                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dbpw976-d54d26f7-047e-484d-8331-fc25d949b646.png/v1/fill/w_900,h_1480,strp/pineapple_on_a_transparent_background__by_prussiaart_dbpw976-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ4MCIsInBhdGgiOiJcL2ZcLzI1ZDQ1MDE0LThjYzMtNGM5OC1iMDJjLTVhMGNmM2E1NWRkZFwvZGJwdzk3Ni1kNTRkMjZmNy0wNDdlLTQ4NGQtODMzMS1mYzI1ZDk0OWI2NDYucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HtGLNBl8wt1r5kXOAaz1pwziAeRMYkcO7howecE1kto"
-                    alt="Pineapple"
-                />
-                <h1>Pineapple</h1>
-            </div>
+            <script defer src="script.js"></script>
+            <!-- <script src="script.js"></script> -->
         </div>
-        <p>Aesthetics manipulation.</p>
-        <!-- <p>Made with vanilla CSS, no special libraries.</p> -->
-        <div class="line"></div>
-
-        <h1>Pixel Play 🦜</h1>
-        <ul>
-            <li>Select value to be modified.</li>
-            <li>Mouse over pixels to modify.</li>
-            <li>Click to reset pixel.</li>
-        </ul>
-
-        <div id="colorbox">
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <div
-                onmousedown="onClickEventHandler(this)"
-                onmouseover="onMouseOverEventHandler(this)"
-                onmouseleave="onMouseLeaveEventHandler(this)"
-                id="colorBoi"
-            ></div>
-            <!-- <div>--------------------------------------</div> -->
-        </div>
-        <div id="buttons">
-            <button id="bbbr" onclick="onClickR(this)">R</button>
-            <button id="bbbg" onclick="onClickG(this)">G</button>
-            <button id="bbbb" onclick="onClickB(this)">B</button>
-            <button id="bbba" onclick="onClickA(this)">A</button>
-        </div>
-        <!-- <p>Made with vanilla JavaScript, no special libraries.</p> -->
-        <p>Objects and color.</p>
-        <div class="line"></div>
-        <script defer src="script.js"></script>
-        <!-- <script src="script.js"></script> -->
     </body>
 </html>

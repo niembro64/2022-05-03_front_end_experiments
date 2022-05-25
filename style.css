@@ -95,9 +95,11 @@
     align-items: center;
     background-color: black;
     color: white;
+    border-bottom-left-radius: 40px ;
+    border-bottom-right-radius: 40px ;
 
     /* background-color: white; */
-    width: 100%;
+    width: 400px;
     padding: 40px 0px 15px 0px;
     margin: 0px 0px 20px 0px;
 
@@ -242,12 +244,28 @@ li:hover {
     flex-wrap: wrap;
 }
 
-.line {
-    width: 85%;
-    height: 6px;
-    background-color: black;
-    margin: 30px 0px 30px 0px;
-    border-radius: 3px;
+.everything{
+    height: 100%;
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+.linebox {
+    width: 380px;
+    height: 500px;
+    /* background-color: rgb(255, 255, 255); */
+    margin: 5px 5px; 
+    /* border-radius: 100px;
+    border: 3px solid black;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
 }
 
 .card2 {
@@ -517,8 +535,8 @@ button:active {
 }
 
 #colorBoi {
-    width: 40px;
-    min-height: 40px;
+    width: 30px;
+    min-height: 30px;
     padding: 0px;
     margin: 0px;
     display: flex;
@@ -534,13 +552,13 @@ button:active {
 }
 
 #colorbox {
-    max-width: 340px;
+    max-width: 240px;
     background-color: rgba(0, 0, 0, 0);
     border: 5px dashed black;
     /* border-radius: 10px; */
 
     /* border: 1px solid black; */
-    padding: 10px 0px;
+    padding: 5px 5px;
     margin: 20px 0px 0px 0px;
     display: flex;
     align-items: center;
@@ -755,7 +773,10 @@ h3 {
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-
+h2{
+    font-size:x-large;
+    margin: 0px 0px 20px 0px ;
+}
 h2 > a:before {
     content: "";
     position: absolute;
@@ -786,11 +807,11 @@ h2 > a:focus:before {
 #title {
     z-index: 2;
     position: absolute;
-    top: -105px;
+    top: -45px;
     width: 310px;
-    height: 300px;
+    height: 180px;
     left: center;
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     mix-blend-mode: luminosity;
     /* border: 1px white solid;  */
@@ -799,6 +820,7 @@ h2 > a:focus:before {
     justify-content: center;
     align-items: center;
     font-size: 80px;
+    border-radius: 10px; 
 
     /* transform: skew(30deg); */
     /* transition: .25s ease, color .25s ease;  */
@@ -828,6 +850,15 @@ h2 > a:focus:before {
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     /* background: url("./color.gif") */
+    border-radius: 10px;
 
     margin: 0px 0px -40px 0px;
+}
+
+ul,li {
+    font-size:small;
+}
+
+p{
+    font-size: small;
 }
