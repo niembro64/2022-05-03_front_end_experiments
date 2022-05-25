@@ -215,8 +215,9 @@ function onMouseDownHandler(ele) {
     var audio_b = new Audio("glass1.mp3");
     audio_b.volume = 0.3;
     audio_b.play();
-    ele.style.cursor = "none";
+    ele.style.cursor = "grab";
 }
+
 function onMouseUpHandler(ele) {
     var audio_a = new Audio("pop1.mp3");
     audio_a.volume = 0.1;
@@ -232,6 +233,7 @@ function onMouseEnterHandler(ele) {
 function onMouseLeaveHandler(ele) {
     // var audio_f = new Audio("audio_f.mp3");
     // audio_f.play();
+    // ele.style.cursor = "grab";
     ele.style.cursor = "default";
 }
 var score_div = document.querySelector("#score");
@@ -406,8 +408,7 @@ function onMouseEnterDesign(ele) {
 var fadeout_interval;
 var fadeout;
 function onMouseLeaveDesign(ele) {
-    ele.style.cursor = "none";
-    ele.style["color"] = "rgba(255, 255, 255, 1)";
+    ele.style.cursor = "default";    ele.style["color"] = "rgba(255, 255, 255, 1)";
     ele.style["text-shadow"] = "0px 0px 0px rgba(255, 255, 255, 1)";
 
     clearInterval(fadein);
@@ -438,7 +439,7 @@ function onMouseLeaveDesign(ele) {
     // ele.style["text-shadow"] = "0px 0px 8px rgba(255, 255, 255, .5)";
 }
 function onMouseUpDesign(ele) {
-    // ele.style.cursor = "grab";
+
     // ele.style.cursor = "pointer";
     ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
@@ -451,7 +452,6 @@ function onMouseUpDesign(ele) {
     // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
 }
 function onMouseDownDesign(ele) {
-    // ele.style.cursor = "grab";
     var pong = new Audio("hit07.wav");
     pong.volume = 1;
     pong.play();
