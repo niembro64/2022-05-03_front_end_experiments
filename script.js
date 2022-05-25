@@ -360,28 +360,28 @@ function coolSlideOut(ele) {
 
 /////////////
 
-var pongr = new Audio("repeat07.wav");
+var pongr = new Audio("z01c.wav");
 pongr.volume = 0;
 pongr.loop = true;
 
-var pongl = new Audio("repeat07.wav");
+var pongl = new Audio("z01c.wav");
 pongl.volume = 0;
 pongl.loop = true;
 
-var pongu = new Audio("repeat07.wav");
+var pongu = new Audio("z03c.wav");
 pongu.volume = 0;
 pongu.loop = true;
 
-var maxvolume = 300;
+var maxvolume = 100;
 
 var volx100 = 0;
 var fadein_interval;
 var fadein;
 function playplay(ele) {
     if (ele) {
-        setTimeout(() => pongr.play(), 0);
-        setTimeout(() => pongl.play(), 400);
-        setTimeout(() => pongu.play(), 700);
+        setTimeout(() => pongr.play(), 1);
+        setTimeout(() => pongl.play(), 351);
+        setTimeout(() => pongu.play(), 701);
     }
 }
 function onMouseEnterDesign(ele) {
@@ -458,7 +458,7 @@ function onMouseUpDesign(ele) {
     // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
 }
 function onMouseDownDesign(ele) {
-    var pong = new Audio("hit07.wav");
+    var pong = new Audio("z00.wav");
     pong.volume = 1;
     pong.play();
     ele.style["text-shadow"] = "0px 0px 24px rgba(255, 255, 255, 1)";
