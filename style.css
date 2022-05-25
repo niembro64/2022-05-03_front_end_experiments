@@ -207,26 +207,6 @@ p {
     margin: 30px 0px;
 }
 
-/* h1 {
-    margin: 0px 0px 10px 0px;
-    font-size: xx-large;
-    font-weight: 500;
-    color: black;
-    transition: 1s ease;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
-    transition: 2s ease, text-shadow 10s ease, color 10s ease-in;
-}
-h1:hover {
-    /* font-weight: 900; */
-    
-    /* color: magenta; */
-    transition: 2s ease, text-shadow 10s ease, color 10s ease;
-}
-h1:active {
-    /* color: white; */
-    /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); */
-    transition: 0s ease, text-shadow 0s ease, color 0s ease;
-} */
 p {
     /* margin: 0px 0px 10px 0px; */
     /* font-size: xx-large; */
@@ -827,7 +807,7 @@ h2 > a:focus:before {
 
 #title:hover {
     /* font-weight: 900; */
-    
+
     /* color: magenta; */
     transition: 2s ease, text-shadow 2s ease, color 9s ease;
 }

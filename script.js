@@ -377,13 +377,15 @@ var maxvolume = 300;
 var volx100 = 0;
 var fadein_interval;
 var fadein;
-function playplay() {
+function playplay(ele) {
+    ele++; 
     setTimeout(() => pongr.play(), 0);
     setTimeout(() => pongl.play(), 400);
     setTimeout(() => pongu.play(), 700);
 }
 function onMouseEnterDesign(ele) {
-    playplay();
+    var z = 0; 
+    playplay(z);
     ele.style.cursor = "pointer";
     // ele.style["color"] = "rgba(0,0,0, 1)";
     ele.style["color"] = "rgba(255,255,255, 1)";
