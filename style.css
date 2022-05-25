@@ -207,57 +207,50 @@ p {
     margin: 30px 0px;
 }
 
-h1 {
+/* h1 {
     margin: 0px 0px 10px 0px;
     font-size: xx-large;
     font-weight: 500;
-    color: black; 
-    transition: 1s ease; 
-    text-shadow: 0px 0px 10px rgb(255, 255, 255);
-    transition: 1s ease, text-shadow 1s ease,  color 1s ease; 
+    color: black;
+    transition: 1s ease;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    transition: 2s ease, text-shadow 10s ease, color 10s ease-in;
 }
-h1:hover{
-    
+h1:hover {
     /* font-weight: 900; */
-    color: magenta; 
     
-    transition: .25s ease, text-shadow .25s ease,  color .25s ease; 
-    
+    /* color: magenta; */
+    transition: 2s ease, text-shadow 10s ease, color 10s ease;
 }
 h1:active {
-    
-    color: white;
+    /* color: white; */
     /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); */
-    transition: .0s ease, text-shadow 0s ease, color 0s ease; 
-}
+    transition: 0s ease, text-shadow 0s ease, color 0s ease;
+} */
 p {
     /* margin: 0px 0px 10px 0px; */
     /* font-size: xx-large; */
 
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     font-weight: 500;
-    transition: 1s ease; 
+    transition: 1s ease;
 }
-p:hover{
-    
+p:hover {
     /* font-weight: 900; */
     text-shadow: 0px 0px 5px rgb(156, 144, 156);
-    transition: .2s ease; 
-
+    transition: 0.2s ease;
 }
 li {
     /* margin: 0px 0px 10px 0px; */
     /* font-size: xx-large; */
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     font-weight: 500;
-    transition: 1s ease; 
+    transition: 1s ease;
 }
-li:hover{
-    
+li:hover {
     /* font-weight: 900; */
     text-shadow: 0px 0px 5px rgba(112, 31, 31, 0.371);
-    transition: .2s ease; 
-
+    transition: 0.2s ease;
 }
 
 .card-group {
@@ -804,8 +797,8 @@ h2 > a:focus:before {
 
 #color_change {
     z-index: -1;
-    position: absolute; 
-    top: 0px; 
+    position: absolute;
+    top: 0px;
     width: 300px;
     height: 120px;
     z-index: 1;
@@ -815,32 +808,46 @@ h2 > a:focus:before {
     position: absolute;
     top: -105px;
     width: 310px;
-    height: 300px; 
-    left: center; 
+    height: 300px;
+    left: center;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    mix-blend-mode: luminosity; 
+    mix-blend-mode: luminosity;
     /* border: 1px white solid;  */
 
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    font-size: 80px; 
+    align-items: center;
+    font-size: 80px;
 
     /* transform: skew(30deg); */
-    transition: .25s ease, color .25s ease; 
+    /* transition: .25s ease, color .25s ease;  */
+    transition: 9s ease, text-shadow 9s ease, color 9s ease;
 }
+
+#title:hover {
+    /* font-weight: 900; */
+    
+    /* color: magenta; */
+    transition: 2s ease, text-shadow 2s ease, color 2s ease;
+}
+#title:active {
+    /* color: white; */
+    /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); */
+    transition: 0s ease, text-shadow 0s ease, color 0s ease;
+}
+
 #divtitle {
-    width: 300px; 
-    height: 130px; 
+    width: 300px;
+    height: 130px;
     z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     /* background: url("./color.gif") */
 
-    margin: 0px 0px -40px 0px; 
+    margin: 0px 0px -40px 0px;
 }

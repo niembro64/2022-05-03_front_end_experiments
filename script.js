@@ -358,36 +358,110 @@ function coolSlideOut(ele) {
 
 /////////////
 
+var pongr = new Audio("repeat07.wav");
+pongr.volume = 0;
+pongr.loop = true;
+setTimeout(() => pongr.play(), 0);
+
+var pongl = new Audio("repeat07.wav");
+pongl.volume = 0;
+pongl.loop = true;
+setTimeout(() => pongl.play(), 400);
+
+var pongu = new Audio("repeat07.wav");
+pongu.volume = 0;
+pongu.loop = true;
+setTimeout(() => pongu.play(), 700);
+
+var maxvolume = 300;
+
+var volx100 = 0;
+var fadein_interval;
+var fadein;
 function onMouseEnterDesign(ele) {
-    // ele.style["filter"] = "inverted";
-    // ele.style["transform"] = "skew(30deg)";
-    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(13,110,253)";
-    ele.style["color"] = "rgba(255, 255, 255, 0.5)";
-    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
+    ele.style.cursor = "pointer";
+    // ele.style["color"] = "rgba(0,0,0, 1)";
+    ele.style["color"] = "rgba(255,255,255, 1)";
+    ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
+
+    clearInterval(fadeout);
+    fadeout_interval = Infinity;
+    fadein_interval = 50;
+    fadein = setInterval(function () {
+        if (volx100 < maxvolume) {
+            volx100 += 20;
+            pongr.volume = volx100 / 1000;
+            pongl.volume = volx100 / 1000;
+            pongu.volume = volx100 / 1000;
+            console.log(pongr.volume);
+            console.log(pongl.volume);
+            console.log(pongu.volume);
+        } else {
+            console.log("CLEAR FADEIN");
+            fadein_interval = 100000;
+            clearInterval(fadein);
+        }
+    }, fadein_interval);
 }
+var fadeout_interval;
+var fadeout;
 function onMouseLeaveDesign(ele) {
+    ele.style.cursor = "none";
+    ele.style["color"] = "rgba(255, 255, 255, 1)";
+    ele.style["text-shadow"] = "0px 0px 0px rgba(255, 255, 255, 1)";
+
+    clearInterval(fadein);
+    fadein_interval = Infinity;
+    fadeout_interval = 50;
+    fadeout = setInterval(function () {
+        if (volx100 > 0) {
+            volx100 -= 2.5;
+            if (volx100 - 3 < 0) {
+                volx100 = 0;
+            }
+            pongr.volume = volx100 / 1000;
+            pongl.volume = volx100 / 1000;
+            pongu.volume = volx100 / 1000;
+            console.log(pongr.volume);
+            console.log(pongl.volume);
+            console.log(pongu.volume);
+        } else {
+            // Stop the setInterval when 0 is reached
+            console.log("CLEAR FADEOUT");
+            fadeout_interval = 100000;
+            clearInterval(fadeout);
+        }
+    }, fadeout_interval);
     // ele.style["filter"] = "inverted";
     // ele.style["transform"] = "skew(0deg)";
     // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
-    ele.style["color"] = "rgba(255, 255, 255, 1)";
-    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 0.5)";
-}
-function onMouseDownDesign(ele) {
-    ele.style["text-shadow"] = "0px 0px 20px rgba(255, 255, 255, 1)";
-    ele.style["color"] = "rgba(255, 255, 255, 1)";
-    // ele.style["filter"] = "inverted";
-    // ele.style["transform"] = "skew(0deg)";
-    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
-    // ele.style["color"] = "rgba(255, 255, 255, 0.0)";
-    // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
+    // ele.style["text-shadow"] = "0px 0px 8px rgba(255, 255, 255, .5)";
 }
 function onMouseUpDesign(ele) {
-    ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
-    ele.style["color"] = "rgba(255, 255, 255, 0.5)";
+    // ele.style.cursor = "grab";
+    ele.style.cursor = "pointer";
+    ele.style["text-shadow"] = "0px 0px 15px rgba(255, 255, 255, 1)";
+    ele.style["color"] = "rgba(255,255,255, 1)";
+    // ele.style["text-shadow"] = "0px 0px 10px rgba(255, 255, 255, 1)";
+    // ele.style["color"] = "rgba(255, 255, 255, 1)";
     // ele.style["filter"] = "inverted";
     // ele.style["transform"] = "skew(0deg)";
     // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
     // ele.style["color"] = "rgba(255, 255, 255, 1)";
+    // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
+}
+function onMouseDownDesign(ele) {
+    ele.style.cursor = "grab";
+    var pong = new Audio("hit07.wav");
+    pong.volume = 1;
+    pong.play();
+    ele.style["text-shadow"] = "0px 0px 24px rgba(255, 255, 255, 1)";
+    // ele.style["color"] = "rgba(0,0,0, .5)";
+    ele.style["color"] = "rgba(0,0,0, .0)";
+    // ele.style["filter"] = "inverted";
+    // ele.style["transform"] = "skew(0deg)";
+    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
+    // ele.style["color"] = "rgba(255, 255, 255, 0.0)";
     // ele.style["text-shadow"] = "rgba(255, 255, 255, 0.0)";
 }
 
