@@ -210,6 +210,53 @@ p {
 h1 {
     margin: 0px 0px 10px 0px;
     font-size: xx-large;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 500;
+    transition: 1s ease; 
+    color: black; 
+}
+h1:hover{
+    
+    /* font-weight: 900; */
+    color: magenta; 
+    
+    transition: .2s ease, text-shadow 1s ease,  color 1s ease; 
+    
+}
+h1:active {
+    
+    color: white;
+    text-shadow: 0px 0px 5px magenta;
+    transition: .2s ease, text-shadow 0s ease, color 0s ease; 
+}
+p {
+    /* margin: 0px 0px 10px 0px; */
+    /* font-size: xx-large; */
+
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 500;
+    transition: 1s ease; 
+}
+p:hover{
+    
+    /* font-weight: 900; */
+    text-shadow: 0px 0px 5px rgb(156, 144, 156);
+    transition: .2s ease; 
+
+}
+li {
+    /* margin: 0px 0px 10px 0px; */
+    /* font-size: xx-large; */
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 500;
+    transition: 1s ease; 
+}
+li:hover{
+    
+    /* font-weight: 900; */
+    text-shadow: 0px 0px 5px rgba(112, 31, 31, 0.371);
+    transition: .2s ease; 
+
 }
 
 .card-group {
@@ -770,7 +817,7 @@ h2 > a:focus:before {
     height: 300px; 
     left: center; 
     background-color: rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 0.461);
+    color: rgba(255, 255, 255, 0.5);
     mix-blend-mode: luminosity; 
     /* border: 1px white solid;  */
 
@@ -779,7 +826,8 @@ h2 > a:focus:before {
     align-items: center; 
     font-size: 80px; 
 
-
+    /* transform: skew(30deg); */
+    transition: .25s ease, color .25s ease; 
 }
 #divtitle {
     width: 300px; 

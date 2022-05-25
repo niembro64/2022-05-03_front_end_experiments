@@ -336,24 +336,38 @@ var e_array = [
 //////////////
 
 // var top = document.querySelector("#btnbtn");
-function coolSlide (ele)  {
-  ele.parentNode.style["width"] = "170px"; 
-  ele.parentNode.style["border-bottom-left-radius"] = "20px"; 
-  ele.parentNode.style["border-bottom-right-radius"] = "20px"; 
-  ele.parentNode.style["background-color"] = "rgb(13,110,253)";
-//   ele.parentNode.style["box-shadow"] = "0 0px 300px 0 rgb(255, 255, 155)";
-  ele.parentNode.style["box-shadow"] = "0 0px 300px 0 rgb(13,110,253)";
-
-};
-function coolSlideOut (ele) {
-  ele.parentNode.style["width"] = "100%"; 
-  ele.parentNode.style["border-bottom-left-radius"] = "0px"; 
-  ele.parentNode.style["border-bottom-right-radius"] = "0px"; 
-  ele.parentNode.style["background-color"] = "black";
-  ele.parentNode.style["box-shadow"] = "0 0px 20px 0 rgb(0, 0, 0)";
-};
+function coolSlide(ele) {
+    ele.parentNode.style["width"] = "170px";
+    ele.parentNode.style["border-bottom-left-radius"] = "20px";
+    ele.parentNode.style["border-bottom-right-radius"] = "20px";
+    ele.parentNode.style["background-color"] = "rgb(13,110,253)";
+    //   ele.parentNode.style["box-shadow"] = "0 0px 300px 0 rgb(255, 255, 155)";
+    ele.parentNode.style["box-shadow"] = "0 0px 300px 0 rgb(13,110,253)";
+}
+function coolSlideOut(ele) {
+    ele.parentNode.style["width"] = "100%";
+    ele.parentNode.style["border-bottom-left-radius"] = "0px";
+    ele.parentNode.style["border-bottom-right-radius"] = "0px";
+    ele.parentNode.style["background-color"] = "black";
+    ele.parentNode.style["box-shadow"] = "0 0px 20px 0 rgb(0, 0, 0)";
+}
 
 /////////////
+
+function onMouseEnterDesign(ele) {
+    // ele.style["filter"] = "inverted";
+    // ele.style["transform"] = "skew(30deg)";
+    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(13,110,253)";
+    ele.style["color"] = "rgba(255, 255, 255, 1)";
+}
+function onMouseLeaveDesign(ele) {
+    // ele.style["filter"] = "inverted";
+    // ele.style["transform"] = "skew(0deg)";
+    // ele.style["box-shadow"] = "0 0px 20px 0 rgb(0,0,0)";
+    ele.style["color"] = "rgba(255, 255, 255, 0.5)";
+}
+
+//////////
 
 (function () {
     var parallax = document.querySelectorAll("body"),
