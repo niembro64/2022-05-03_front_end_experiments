@@ -195,7 +195,7 @@ function onClickR(ele) {
 }
 function onClickG(ele) {
     document.getElementsByTagName("body")[0].style.cursor =
-        "url('1_green.cur'), auto";
+        "url('2_green.cur'), auto";
     var audio_b = new Audio("2.mp3");
     audio_b.volume = bingvolume;
     audio_b.play();
@@ -506,7 +506,7 @@ function onEnterR(ele){
     ele.style.cursor = "url('./1_red.cur'), auto";
 }
 function onEnterG(ele){
-    ele.style.cursor = "url('./1_green.cur'), auto";
+    ele.style.cursor = "url('./2_green.cur'), auto";
 }
 function onEnterB(ele){
     ele.style.cursor = "url('./1_blue.cur'), auto";
