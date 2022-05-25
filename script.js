@@ -378,13 +378,14 @@ var volx100 = 0;
 var fadein_interval;
 var fadein;
 function playplay(ele) {
-    ele++; 
-    setTimeout(() => pongr.play(), 0);
-    setTimeout(() => pongl.play(), 400);
-    setTimeout(() => pongu.play(), 700);
+    if (ele) {
+        setTimeout(() => pongr.play(), 0);
+        setTimeout(() => pongl.play(), 400);
+        setTimeout(() => pongu.play(), 700);
+    }
 }
 function onMouseEnterDesign(ele) {
-    var z = 0; 
+    var z = 1;
     playplay(z);
     ele.style.cursor = "pointer";
     // ele.style["color"] = "rgba(0,0,0, 1)";
