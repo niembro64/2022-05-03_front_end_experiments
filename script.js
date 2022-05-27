@@ -21,7 +21,7 @@ function onMouseLeaveEventHandlerEmoji(ele) {
     // ele.innerHTML = "";
 }
 
-var addColor = 50;
+var addColor = 85;
 var addALpha = 0.2;
 function onMouseOverEventHandler(ele) {
     // ele.style.cursor = "pointer";
@@ -133,7 +133,9 @@ function onClickEventHandler(ele) {
     var audio_w = new Audio("extreme.mp3");
     audio_w.volume = 0.3;
     audio_w.play();
-    ele.innerHTML = "✖";
+    // ele.innerHTML = "✖";
+    ele.innerHTML = "❌";
+    // ele.innerHTML = "🗑️";
     // console.log("HERE");
     var rgb_string;
     try {

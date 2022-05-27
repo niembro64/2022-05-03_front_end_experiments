@@ -534,8 +534,8 @@ button:active {
 }
 
 #colorBoi {
-    width: 30px;
-    min-height: 30px;
+    width: 60px;
+    min-height: 60px;
     padding: 0px;
     margin: 0px;
     display: flex;
@@ -591,15 +591,15 @@ button:active {
 #bbbr {
     z-index: 3;
     width: 45px;
-    height: 40px;
+    height: 50px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     padding: 0px 0px 0px 5px;
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
-    color: black;
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 0px;
 
     border: 3px solid transparent;
@@ -607,8 +607,6 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: center;
-
-   
 
     /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
     transition: background-color 1s ease, color 1s ease, border 1s ease,
@@ -638,13 +636,13 @@ button:active {
 #bbbg {
     z-index: 2;
     width: 40px;
-    height: 40px;
+    height: 50px;
     margin: 0px;
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
-    color: black;
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 0px; 
 
     border: 3px solid transparent;
@@ -677,14 +675,13 @@ button:active {
 }
 #bbbb {
     width: 45px;
-    height: 40px;
+    height: 50px;
     /* margin: 20px; */
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     padding: 0px 5px 0px 0px;
-    color: black;
-    background-color: white;
-
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     border: 3px solid transparent;
     font-size: xx-large;
     display: flex;
@@ -720,8 +717,8 @@ button:active {
     /* margin: 20px; */
     /* border-radius: 10%; */
     /* border-width: 10px; */
-    color: black;
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 
     border: 3px solid transparent;
     font-size: xx-large;
@@ -734,9 +731,9 @@ button:active {
         box-shadow 1s ease;
 }
 #bbba:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     border: 3px solid transparent;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 
     /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(255, 0, 0, 0.3); */
     transition: background-color 0s ease, color 0s ease, border 1s ease,
