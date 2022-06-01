@@ -534,8 +534,8 @@ button:active {
 }
 
 #colorBoi {
-    width: 60px;
-    min-height: 60px;
+    width: 50px;
+    min-height: 50px;
     padding: 0px;
     margin: 0px;
     display: flex;
@@ -551,9 +551,10 @@ button:active {
 }
 
 #colorbox {
-    max-width: 240px;
+    max-width: 200px;
+
     background-color: rgba(0, 0, 0, 0);
-    border: 8px dashed rgba(0, 0, 0, 0.5);
+    border: 6px dashed rgba(0, 0, 0, 0.5);
     /* border-radius: 10px; */
 
     /* border: 1px solid black; */
