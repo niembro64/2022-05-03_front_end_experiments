@@ -47,6 +47,32 @@
             </ul>
         </div>
         <div class="everything">
+            <div
+            id="linebox_cube"
+            onmouseenter="cubeColorIn(this)"
+            onmouseleave="cubeColorOut(this)"
+            onmousedown="cubeColorDown(this)"
+            onmouseup="cubeColorUp(this)"
+            class="linebox"
+        >
+            <h2>Cube Twist</h2>
+            <ul>
+                <li>Mouse over to colorize.</li>
+                <li>Click to circleize.</li>
+            </ul>
+            <div class="spinnerOuterOuter">
+                <div class="spinnerOuter">
+                    <div class="spinner">
+                        <div class="cube_side"></div>
+                        <div class="cube_side"></div>
+                        <div class="cube_side"></div>
+                        <div class="cube_side"></div>
+                        <div class="cube_side"></div>
+                        <div class="cube_side"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="linebox">
                 <h2>Emoji Hunt</h2>
                 <ul>
@@ -340,31 +366,7 @@
                 <!-- <p>Made with vanilla JavaScript, no special libraries.</p> -->
                 <!-- <p>Objects and color.</p> -->
             </div>
-            <div
-                id="linebox_cube"
-                onmouseenter="cubeColorIn(this)"
-                onmouseleave="cubeColorOut(this)"
-                onmousedown="cubeColorDown(this)"
-                onmouseup="cubeColorUp(this)"
-                class="linebox"
-            >
-                <h2>Cube Twist</h2>
-                <ul>
-                    <li>User interaction coming soon.</li>
-                </ul>
-                <div class="spinnerOuterOuter">
-                    <div class="spinnerOuter">
-                        <div class="spinner">
-                            <div class="cube_side"></div>
-                            <div class="cube_side"></div>
-                            <div class="cube_side"></div>
-                            <div class="cube_side"></div>
-                            <div class="cube_side"></div>
-                            <div class="cube_side"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
             <script defer src="script.js"></script>
         </div>
     </body>

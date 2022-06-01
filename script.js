@@ -18,13 +18,15 @@ function onMouseLeaveEventHandler(ele) {
     ele.innerHTML = "";
 }
 function onMouseLeaveEventHandlerEmoji(ele) {
+    // ele.style.cursor = "grabbing";
     // ele.innerHTML = "";
 }
 
 var addColor = 85;
 var addALpha = 0.2;
 function onMouseOverEventHandler(ele) {
-    // ele.style.cursor = "pointer";
+    // ele.style.cursor = "grabbing";
+    // ele.style.cursor = "help";
     // document.getElementsByTagName("body")[0].style.cursor = "url('1_red.cur'), auto";
 
     var rgb_string;
@@ -233,7 +235,7 @@ function onMouseDownHandler(ele) {
     var audio_b = new Audio("glass1.mp3");
     audio_b.volume = 0.3;
     audio_b.play();
-    ele.style.cursor = "grab";
+    ele.style.cursor = "grabbing";
 }
 
 function onMouseUpHandler(ele) {
