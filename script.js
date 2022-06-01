@@ -183,7 +183,8 @@ var rgba_switch = "a";
 var bingvolume = 0.5;
 // document.getElementsByTagName("body")[0].style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
 
-document.getElementsByTagName("body")[0].style.cursor = "url('./aaa_white.cur'), auto";
+document.getElementsByTagName("body")[0].style.cursor =
+    "url('./aaa_white.cur'), auto";
 
 function onClickR(ele) {
     document.getElementsByTagName("body")[0].style.cursor =
@@ -504,15 +505,88 @@ function onMouseDownDesign(ele) {
     };
 })();
 
-function onEnterR(ele){
+function onEnterR(ele) {
     ele.style.cursor = "url('./1_red.cur'), auto";
 }
-function onEnterG(ele){
+function onEnterG(ele) {
     ele.style.cursor = "url('./2_green.cur'), auto";
 }
-function onEnterB(ele){
+function onEnterB(ele) {
     ele.style.cursor = "url('./1_blue.cur'), auto";
 }
-function onEnterA(ele){
+function onEnterA(ele) {
     ele.style.cursor = "url('./aaa_white.cur'), auto";
+}
+
+////////////////
+
+var cube_line = document.querySelectorAll(".cube_side");
+var spinnerOuterOuter= document.querySelector(".spinnerOuterOuter");
+// var inner_cube_line = document.getElementsByClassName("inner_cube_side");
+
+function cubeColorIn(ele) {
+    ele.style.cursor = "pointer";
+    // spinnerOuterOuter.style.animationDuration = "7s";
+    
+    for (var i = 0; i < cube_line.length; i++) {
+        
+        cube_line[i].style["transition-duration"] = ".3s";
+        cube_line[i].style["filter"] = "saturate(100%)";
+        // cube_line[i].style["border-radius"] = "50%";
+        // cube_line[i].style["box-shadow"] =
+        // "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
+        
+        // cube_line[i].children[0].style["transition-duration"] = ".3s";
+        // cube_line[i].children[0].style["width"] = "180px";
+        // cube_line[i].children[0].style["height"] = "180px";
+
+    }
+}
+function cubeColorOut(ele) {
+    // spinnerOuterOuter.style.animationDuration = "33s";
+    ele.style.cursor = "default";
+    for (var i = 0; i < 6; i++) {
+        cube_line[i].style["transition-duration"] = "3s";
+        cube_line[i].style["filter"] = "saturate(0%)";
+        // cube_line[i].style["border-radius"] = "0px";
+        // cube_line[i].style["box-shadow"] =
+        // "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
+        
+        // cube_line[i].children[0].style["transition-duration"] = "1s";
+        // cube_line[i].children[0].style["width"] = "0px";
+        // cube_line[i].children[0].style["height"] = "0px";
+    }
+}
+
+function cubeColorDown (){
+    for (var i = 0; i < cube_line.length; i++) {
+        cube_line[i].style["transition-duration"] = ".2s";
+        // cube_line[i].style["filter"] = "saturate(100%)";
+        cube_line[i].style["border-radius"] = "50%";
+        cube_line[i].style["box-shadow"] =
+        "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
+        // cube_line[i].style["width"] = "60px";
+        // cube_line[i].style["height"] = "60px";
+        
+        // cube_line[i].children[0].style["transition-duration"] = ".3s";
+        // cube_line[i].children[0].style["width"] = "180px";
+        // cube_line[i].children[0].style["height"] = "180px";
+        
+        
+    }
+}
+function cubeColorUp (){
+    for (var i = 0; i < 6; i++) {
+        cube_line[i].style["transition-duration"] = "3s";
+        // cube_line[i].style["filter"] = "saturate(0%)";
+        cube_line[i].style["border-radius"] = "0px";
+        cube_line[i].style["box-shadow"] =
+        "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
+        // cube_line[i].style["width"] = "160px";
+        // cube_line[i].style["height"] = "160px";
+        
+        // cube_line[i].children[0].style["transition-duration"] = "1s";
+        // cube_line[i].children[0].style["width"] = "0px";
+        // cube_line[i].children[0].style["height"] = "0px";
+    }
 }
