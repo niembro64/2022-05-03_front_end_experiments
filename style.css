@@ -1007,7 +1007,8 @@ p {
     z-index: 30;
     width: 50px;
     height: 50px;
-    border: 10px solid #43434329;
+    border: 10px solid #43434300;
+    background-color: #43434330;;
     border-radius: 20px;
     margin: 20px; 
 }
@@ -1034,6 +1035,7 @@ input {
     border: 10px solid #434343;
     border-radius: 20px;
     transition: all 0.25s;
+    transform: rotate(180deg);
 }
 input:checked ~ .checkbox {
     /* transform: rotate(45deg); */
@@ -1044,7 +1046,7 @@ input:checked ~ .checkbox {
     border-top-color: transparent;
     border-left-color: transparent;
     border-radius: 15px;
-    transform: translateX(-12px) translateY(-20px) scale(0.5) rotate(55deg)
+    transform: translateX(-12px) translateY(-20px) scale(0.5) rotate(415deg)
         skewX(17deg);
 }
 .checkboxx {
@@ -1064,14 +1066,14 @@ input:checked ~ .checkboxx {
     height: 0px;
     margin-left: 0px;
     /* border-color: #24c78e; */
-    border: 10px solid #acaa21;
+    border: 10px solid #434343;
     /* border-top-color: transparent;
     border-left-color: transparent;
     border-bottom-color: transparent; */
     /* border-radius: 30px; */
     border-radius: 5px;
-    background-color: #acaa21;
-    transform: translateX(-7px) translateY(25px) scale(0.5);
+    background-color: #434343;
+    transform: translateX(-7px) translateY(25px) scale(0.5) rotate(180deg);
 }
 .checkboxxx {
     position: absolute;
@@ -1098,7 +1100,7 @@ input:checked ~ .checkboxxx {
     /* border-radius: 30px; */
     border-radius: 5px;
     background-color: #c72424;
-    transform: translateX(25px) translateY(-12px) scale(0.5) rotate(-22deg)
+    transform: translateX(25px) translateY(-12px) scale(0.5) rotate(-202deg)
         skewX(17deg);
 }
 
