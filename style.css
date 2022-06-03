@@ -1073,7 +1073,7 @@ input:checked ~ .checkboxx {
     /* border-radius: 30px; */
     border-radius: 5px;
     background-color: #434343;
-    transform: translateX(-7px) translateY(25px) scale(0.5) rotate(180deg);
+    transform: translateX(-7px) translateY(25px) scale(0.5) rotate(-180deg);
 }
 .checkboxxx {
     position: absolute;
