@@ -886,7 +886,7 @@ p {
 
     animation: spinnerAnimation0 33s infinite ease-in-out;
     transform-style: preserve-3d;
-    transition: 5s ease; 
+    transition: 5s ease;
 }
 .spinnerOuter {
     width: 160px;
@@ -922,7 +922,6 @@ p {
     filter: saturate(0%);
     border-radius: 0px;
 }
-
 
 .spinner div:nth-of-type(1) {
     transform: translateZ(-80px) rotateY(180deg);
@@ -1002,3 +1001,108 @@ p {
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
+
+.label_outer {
+    margin:  40px 0px 0px 0px; 
+    z-index: 30;
+    width: 50px;
+    height: 50px;
+    border: 10px solid #43434329;
+    border-radius: 20px;
+    margin: 20px; 
+}
+label {
+    /* display: block; */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 40px 0px 0px 0px;
+}
+
+input {
+    /* position: absolute; */
+    transform: scale(0);
+}
+
+.checkbox {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 10px solid #434343;
+    border-radius: 20px;
+    transition: all 0.25s;
+}
+input:checked ~ .checkbox {
+    /* transform: rotate(45deg); */
+    width: 25px;
+    margin-left: 16px;
+    /* border-color: #24c78e; */
+    border: 20px solid #24c78e;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 15px;
+    transform: translateX(-12px) translateY(-20px) scale(0.5) rotate(55deg)
+        skewX(17deg);
+}
+.checkboxx {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 10px solid #434343;
+    border-radius: 20px;
+    transition: all 0.25s;
+}
+input:checked ~ .checkboxx {
+    /* transform: rotate(45deg); */
+    width: 64px;
+    height: 0px;
+    margin-left: 0px;
+    /* border-color: #24c78e; */
+    border: 10px solid #acaa21;
+    /* border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent; */
+    /* border-radius: 30px; */
+    border-radius: 5px;
+    background-color: #acaa21;
+    transform: translateX(-7px) translateY(25px) scale(0.5);
+}
+.checkboxxx {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 10px solid #434343;
+    border-radius: 20px;
+    transition: all 0.25s;
+}
+input:checked ~ .checkboxxx {
+    /* transform: rotate(45deg); */
+    width: 0px;
+    height: 75px;
+    margin-left: 0px;
+    /* border-color: #24c78e; */
+    border: 10px solid #c72424;
+    
+    /* border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent; */
+    /* border-radius: 30px; */
+    border-radius: 5px;
+    background-color: #c72424;
+    transform: translateX(25px) translateY(-12px) scale(0.5) rotate(-22deg)
+        skewX(17deg);
+}
+
+.row{
+    display: flex;
+    flex-direction: row; 
+}
