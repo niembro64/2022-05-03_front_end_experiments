@@ -290,8 +290,8 @@ function onLeaveKill(ele) {
 
 var emo = document.querySelector("#ccc");
 function generateEmoji() {
-    var audio_b = new Audio("up.mp3");
-    audio_b.volume = 0.6;
+    var audio_b = new Audio("time.wav");
+    audio_b.volume = 0.2;
     audio_b.play();
     for (var i = 0; i < 3; i++) {
         var clone = emo.cloneNode(true);
@@ -591,4 +591,15 @@ function cubeColorUp (){
         // cube_line[i].children[0].style["width"] = "0px";
         // cube_line[i].children[0].style["height"] = "0px";
     }
+}
+
+
+///////////////////////////////////////////////
+// checkboxes
+
+function checkBoxOnMouseDownHandler (ele){
+    var click_up = new Audio("click_up.wav");
+    click_up.volume = .1;
+    click_up.play();  
+
 }
