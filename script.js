@@ -290,7 +290,7 @@ function onLeaveKill(ele) {
 
 var emo = document.querySelector("#ccc");
 function generateEmoji() {
-    var audio_b = new Audio("time.wav");
+    var audio_b = new Audio("wii.wav");
     audio_b.volume = 0.2;
     audio_b.play();
     for (var i = 0; i < 3; i++) {
@@ -599,6 +599,12 @@ function cubeColorUp (){
 
 function checkBoxOnMouseDownHandler (ele){
     var click_up = new Audio("click_up.wav");
+    click_up.volume = .1;
+    click_up.play();  
+
+}
+function checkBoxOnMouseDownHandler2 (ele){
+    var click_up = new Audio("click_down.wav");
     click_up.volume = .1;
     click_up.play();  
 

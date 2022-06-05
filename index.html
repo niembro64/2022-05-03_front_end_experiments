@@ -369,8 +369,9 @@
             <div class="linebox">
                 <h2>CheckBox Tweak</h2>
                 <ul>
-                    <li>In progress.</li>
-                    <li>Will be cleaner soon.</li>
+                    <li>Click to check.</li>
+                    <li>Click again to uncheck.</li>
+
                 </ul>
                 <div class="row">
                     <label
@@ -380,7 +381,7 @@
                             class="label_outer"
                         ></div>
                         <input type="checkbox" />
-                        <span class="checkbox"> </span>
+                        <span class="checkbox1"> </span>
                     </label>
                     <label
                     onmousedown="checkBoxOnMouseDownHandler(this)"
@@ -400,12 +401,24 @@
                         >
                             <input type="checkbox" />
                             <span class="checkboxxx"> </span>
+
+                        </div>
+                    </label>
+                    <label
+                    onmousedown="checkBoxOnMouseDownHandler(this)"
+                    >
+                    <div
+                            class="label_outer"
+                        >
+                            <input type="checkbox" />
+                            <span class="checkboxxx1"> </span>
+                            <span class="checkboxxx2"> </span>
                         </div>
                     </label>
                 </div>
                 <div class="row">
                     <label
-                    onmousedown="checkBoxOnMouseDownHandler(this)"
+                    onmousedown="checkBoxOnMouseDownHandler2(this)"
                     >
                         <div
                             class="label_outer"

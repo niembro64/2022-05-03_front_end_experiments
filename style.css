@@ -1010,7 +1010,9 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 20px 20px 20px;
+    margin: 40px 10px 0px 10px;
+    /* border: 1px solid #434343;  */
+    border-radius: 20px;
     z-index: 0;
 }
 .label_outer {
@@ -1021,12 +1023,15 @@ label {
     width: 50px;
     height: 50px;
     /* border: 10px solid #43434300; */
-    border: 10px solid #34803e00;
+    border: 10px solid #43434300;
     background-color: #43434330;
     border-radius: 20px;
     margin: 20px;
 
-    z-index: 0;
+    z-index: 1;
+}
+.label_outer:hover {
+    background-color: #43434375;
 }
 
 input {
@@ -1034,7 +1039,7 @@ input {
     z-index: 0;
 }
 
-.checkbox {
+.checkbox1 {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -1046,9 +1051,9 @@ input {
     border-radius: 20px;
     transition: all 0.25s;
     transform: rotate(180deg);
-    z-index: 0;
+    /* z-index: 0; */
 }
-input:checked ~ .checkbox {
+input:checked ~ .checkbox1 {
     width: 25px;
     margin-left: 16px;
     width: 25px;
@@ -1060,7 +1065,7 @@ input:checked ~ .checkbox {
     border-radius: 15px;
     transform: translateX(-12px) translateY(-30px) scale(0.5) rotate(415deg)
         skewX(17deg);
-    z-index: 0;
+    /* z-index: 0; */
 }
 .checkboxx {
     position: absolute;
@@ -1093,16 +1098,57 @@ input:checked ~ .checkboxx {
     height: inherit;
     border: 10px solid #434343;
     border-radius: 20px;
-    transition: all 0.25s;
+    transition: 0.25s ease-out;
 }
 input:checked ~ .checkboxxx {
+    width: 0px;
+    height: 90px;
+    margin-left: 0px;
+    border: 10px solid #8f8500;
+    border-radius: 5px;
+    background-color: #8f8500;
+    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(-225deg);
+}
+.checkboxxx1 {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 10px solid #434343;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+}
+input:checked ~ .checkboxxx1 {
     width: 0px;
     height: 90px;
     margin-left: 0px;
     border: 10px solid #c72424;
     border-radius: 5px;
     background-color: #c72424;
-    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(-225deg);
+    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(135deg);
+}
+
+.checkboxxx2 {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 10px solid #434343;
+    border-radius: 20px;
+    transition: 0.25s ease-out;
+}
+input:checked ~ .checkboxxx2 {
+    width: 0px;
+    height: 90px;
+    margin-left: 0px;
+    border: 10px solid #c72424;
+    border-radius: 5px;
+    background-color: #c72424;
+    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(-135deg);
 }
 .checkboxxxx {
     position: absolute;
@@ -1110,7 +1156,6 @@ input:checked ~ .checkboxxx {
     left: 25px;
     display: block;
 
-    transition: all 0.25s;
     /* transition: all 0.5s, background-color 0s, border-color 0s; */
 
     z-index: 0;
@@ -1122,11 +1167,12 @@ input:checked ~ .checkboxxx {
     border-radius: 5px;
     background-color: #c72424;
 
-    transform:  rotate(-135deg) scale(.5);
+    transform: rotate(-135deg) scale(0.5);
+    transition: 2s ease-out;
     /* animation: checkanimation 2s; */
 }
-input:checked ~ .checkboxxxx {
 
+input:checked ~ .checkboxxxx {
     margin-left: 16px;
     width: 25px;
     height: 70px;
@@ -1136,14 +1182,14 @@ input:checked ~ .checkboxxxx {
     border-top-color: transparent;
     border-left-color: transparent;
     border-radius: 15px;
-    transform: translateX(-38px) translateY(-10px) rotate(415deg) scale(.5)
+    transform: translateX(-38px) translateY(-10px) rotate(415deg) scale(0.5)
         skewX(17deg);
 
     z-index: 0;
-    animation-name: checkanimation 2s;
+    /* animation-name: checkanimation 2s; */
 }
 
-@keyframes checkanimation {
+/* @keyframes checkanimation {
     0% {
         transform: scale(0.5);
     }
@@ -1154,7 +1200,7 @@ input:checked ~ .checkboxxxx {
     100% {
         transform: scale(5);
     }
-}
+} */
 
 .row {
     display: flex;
