@@ -1031,7 +1031,8 @@ label {
     z-index: 1;
 }
 .label_outer:hover {
-    background-color: #43434375;
+    background-color: #43434300;
+    /* border-color: magenta;  */
 }
 
 input {
@@ -1051,7 +1052,7 @@ input {
     border-radius: 20px;
     transition: all 0.25s;
     transform: rotate(180deg);
-    /* z-index: 0; */
+    z-index: 0;
 }
 input:checked ~ .checkbox1 {
     width: 25px;
@@ -1065,7 +1066,7 @@ input:checked ~ .checkbox1 {
     border-radius: 15px;
     transform: translateX(-12px) translateY(-30px) scale(0.5) rotate(415deg)
         skewX(17deg);
-    /* z-index: 0; */
+    z-index: 0;
 }
 .checkboxx {
     position: absolute;
@@ -1077,6 +1078,7 @@ input:checked ~ .checkbox1 {
     border: 10px solid #434343;
     border-radius: 20px;
     transition: all 0.25s;
+    z-index: 0;
 }
 input:checked ~ .checkboxx {
     width: 64px;
@@ -1088,6 +1090,7 @@ input:checked ~ .checkboxx {
     border-radius: 5px;
     background-color: #434343;
     transform: translateX(-7px) translateY(25px) scale(0.5) rotate(-180deg);
+    z-index: 0;
 }
 .checkboxxx {
     position: absolute;
@@ -1099,6 +1102,7 @@ input:checked ~ .checkboxx {
     border: 10px solid #434343;
     border-radius: 20px;
     transition: 0.25s ease-out;
+    z-index: 0;
 }
 input:checked ~ .checkboxxx {
     width: 0px;
@@ -1116,9 +1120,10 @@ input:checked ~ .checkboxxx {
     display: block;
     width: inherit;
     height: inherit;
-    border: 10px solid #434343;
+    border: 10px solid #43434300;
     border-radius: 20px;
     transition: 0.5s ease-out;
+    transform: scale(.1);
 }
 input:checked ~ .checkboxxx1 {
     width: 0px;
@@ -1127,7 +1132,7 @@ input:checked ~ .checkboxxx1 {
     border: 10px solid #c72424;
     border-radius: 5px;
     background-color: #c72424;
-    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(135deg);
+    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(135deg) ;
 }
 
 .checkboxxx2 {
@@ -1205,4 +1210,66 @@ input:checked ~ .checkboxxxx {
 .row {
     display: flex;
     flex-direction: row;
+}
+
+/* ///////////////////////////////////// */
+/*  circle animation */
+
+.progress-bar {
+    position: relative;
+    margin: 40px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* outline: 5px solid #00000088; */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+
+    /* outline-offset: -1px; */
+}
+.progress-bar::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.5);
+}
+.progress-bar::after {
+    content: "";
+    /* width: 50px;
+    height: 50px; */
+    border-radius: inherit;
+    /* border-radius: 10px solid black; */
+    outline: black;
+    /* background-color: magenta; */
+}
+.circleee {
+    /* stroke-dasharray: 410;
+    stroke-dashoffset: 410; */
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+    transform: rotate(-90deg);
+    filter: grayscale(1) brightness(0) opacity(0.5);
+
+    animation: bar-fill 10s linear infinite;
+    /* background-color: magenta; */
+    /* border-color: black; */
+}
+@keyframes bar-fill {
+    100% {
+        stroke-dashoffset: 0;
+        /* background-color: white;  */
+    }
+}
+
+html {
+    scroll-behavior: smooth; 
 }

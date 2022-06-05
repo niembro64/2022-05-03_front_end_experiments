@@ -507,6 +507,9 @@ function onMouseDownDesign(ele) {
     };
 })();
 
+
+//////////////////////////////////////////////////////////////////////
+
 function onEnterR(ele) {
     ele.style.cursor = "url('./1_red.cur'), auto";
 }
@@ -523,25 +526,23 @@ function onEnterA(ele) {
 ////////////////
 
 var cube_line = document.querySelectorAll(".cube_side");
-var spinnerOuterOuter= document.querySelector(".spinnerOuterOuter");
+var spinnerOuterOuter = document.querySelector(".spinnerOuterOuter");
 // var inner_cube_line = document.getElementsByClassName("inner_cube_side");
 
 function cubeColorIn(ele) {
     ele.style.cursor = "pointer";
     // spinnerOuterOuter.style.animationDuration = "7s";
-    
+
     for (var i = 0; i < cube_line.length; i++) {
-        
         cube_line[i].style["transition-duration"] = ".3s";
         cube_line[i].style["filter"] = "saturate(100%)";
         // cube_line[i].style["border-radius"] = "50%";
         // cube_line[i].style["box-shadow"] =
         // "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
-        
+
         // cube_line[i].children[0].style["transition-duration"] = ".3s";
         // cube_line[i].children[0].style["width"] = "180px";
         // cube_line[i].children[0].style["height"] = "180px";
-
     }
 }
 function cubeColorOut(ele) {
@@ -553,59 +554,70 @@ function cubeColorOut(ele) {
         // cube_line[i].style["border-radius"] = "0px";
         // cube_line[i].style["box-shadow"] =
         // "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
-        
+
         // cube_line[i].children[0].style["transition-duration"] = "1s";
         // cube_line[i].children[0].style["width"] = "0px";
         // cube_line[i].children[0].style["height"] = "0px";
     }
 }
 
-function cubeColorDown (){
+function cubeColorDown() {
     for (var i = 0; i < cube_line.length; i++) {
         cube_line[i].style["transition-duration"] = ".2s";
         // cube_line[i].style["filter"] = "saturate(100%)";
         cube_line[i].style["border-radius"] = "50%";
         cube_line[i].style["box-shadow"] =
-        "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
+            "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
         // cube_line[i].style["width"] = "60px";
         // cube_line[i].style["height"] = "60px";
-        
+
         // cube_line[i].children[0].style["transition-duration"] = ".3s";
         // cube_line[i].children[0].style["width"] = "180px";
         // cube_line[i].children[0].style["height"] = "180px";
-        
-        
     }
 }
-function cubeColorUp (){
+function cubeColorUp() {
     for (var i = 0; i < 6; i++) {
         cube_line[i].style["transition-duration"] = "3s";
         // cube_line[i].style["filter"] = "saturate(0%)";
         cube_line[i].style["border-radius"] = "0px";
         cube_line[i].style["box-shadow"] =
-        "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
+            "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
         // cube_line[i].style["width"] = "160px";
         // cube_line[i].style["height"] = "160px";
-        
+
         // cube_line[i].children[0].style["transition-duration"] = "1s";
         // cube_line[i].children[0].style["width"] = "0px";
         // cube_line[i].children[0].style["height"] = "0px";
     }
 }
 
-
 ///////////////////////////////////////////////
 // checkboxes
 
-function checkBoxOnMouseDownHandler (ele){
+function checkBoxOnMouseDownHandler(ele) {
     var click_up = new Audio("click_up.wav");
-    click_up.volume = .1;
-    click_up.play();  
-
+    click_up.volume = 0.1;
+    click_up.play();
 }
-function checkBoxOnMouseDownHandler2 (ele){
+function checkBoxOnMouseDownHandler2(ele) {
     var click_up = new Audio("click_down.wav");
-    click_up.volume = .1;
-    click_up.play();  
-
+    click_up.volume = 0.1;
+    click_up.play();
 }
+
+///////////////////////////////////////
+// circle aniamtion
+
+let counter = 0;
+setInterval(() => {
+    const el = document.querySelector(".number");
+    const elValue = Number(el.getAttribute("data-value"));
+    if (counter !== elValue) {
+        counter++;
+        el.innerHTML = `${counter}%`;
+    }
+    if (counter == 100) {
+        counter = 0;
+    }
+}, 100);
