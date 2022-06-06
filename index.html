@@ -80,11 +80,9 @@
                     <li>Click to generate more.</li>
                     <li>Shoot 'em up!</li>
                 </ul>
-                <div id="scoreboard">
-                    <b
-                        ><h3>SCORE: <span id="score">0</span></h3></b
-                    >
-                </div>
+
+                <h3>SCORE: <span id="score">0</span></h3>
+
                 <!-- <button onclick="generateEmoji()" id="generate">
             <b>Generate 3</b>
         </button> -->
@@ -372,25 +370,31 @@
                     <li>Click to check.</li>
                     <li>Click again to uncheck.</li>
                 </ul>
+                <h3># CHECKED: <span id="num_checked"></span></h3>
                 <div class="row">
-                    <label onmousedown="checkBoxOnMouseDownHandler(this)">
-                        <div class="label_outer"></div>
-                        <input type="checkbox" />
-                        <span class="checkbox1"> </span>
+                    <label onmouseup="checkBoxOnMouseDownHandler(this)">
+                        <!-- <label onmousedown="checkBoxOnMouseDownHandler(this)"> -->
+                        <div class="label_outer">
+                            <input type="checkbox" />
+                            <span class="checkbox1"> </span>
+                        </div>
                     </label>
-                    <label onmousedown="checkBoxOnMouseDownHandler(this)">
+                    <label onmouseup="checkBoxOnMouseDownHandler(this)">
+                        <!-- <label onmousedown="checkBoxOnMouseDownHandler(this)"> -->
                         <div class="label_outer">
                             <input type="checkbox" />
                             <span class="checkboxx"> </span>
                         </div>
                     </label>
-                    <label onmousedown="checkBoxOnMouseDownHandler(this)">
+                    <label onmouseup="checkBoxOnMouseDownHandler(this)">
+                        <!-- <label onmousedown="checkBoxOnMouseDownHandler(this)"> -->
                         <div class="label_outer">
                             <input type="checkbox" />
                             <span class="checkboxxx"> </span>
                         </div>
                     </label>
-                    <label onmousedown="checkBoxOnMouseDownHandler(this)">
+                    <label onmouseup="checkBoxOnMouseDownHandler(this)">
+                        <!-- <label onmousedown="checkBoxOnMouseDownHandler(this)"> -->
                         <div class="label_outer">
                             <input type="checkbox" />
                             <span class="checkboxxx1"> </span>
@@ -399,17 +403,19 @@
                     </label>
                 </div>
                 <div class="row">
-                    <label onmousedown="checkBoxOnMouseDownHandler2(this)">
-                        <div class="label_outer"></div>
-                        <input type="checkbox" />
-                        <span class="checkboxxxx"> </span>
+                    <label onmouseup="checkBoxOnMouseDownHandler2(this)">
+                        <!-- <label onmousedown="checkBoxOnMouseDownHandler2(this)"> -->
+                        <div class="label_outer">
+                            <input type="checkbox" />
+                            <span class="checkboxxxx"> </span>
+                        </div>
                     </label>
                 </div>
             </div>
             <div class="linebox">
                 <h2>LoadBar Tweak</h2>
                 <ul>
-                    <li>Coming Soon.</li>
+                    <li>User input coming Soon.</li>
                 </ul>
                 <div class="progress-bar">
                     <span class="number" data-value="100"></span>

@@ -758,9 +758,9 @@ ul {
     font-size: xx-large;
 }
 
-#scoreboard {
+/* #scoreboard {
     margin: 15px 0px 0px 0px;
-}
+} */
 
 #generate {
     padding: 10px 20px;
@@ -1031,7 +1031,7 @@ label {
     z-index: 1;
 }
 .label_outer:hover {
-    background-color: #43434300;
+    background-color: #43434352;
     /* border-color: magenta;  */
 }
 
@@ -1044,8 +1044,8 @@ input {
     position: absolute;
     width: 50px;
     height: 50px;
-    top: -0px;
-    left: -0px;
+    top: -11px;
+    left: -10px;
     display: block;
 
     border: 10px solid #434343;
@@ -1123,7 +1123,7 @@ input:checked ~ .checkboxxx {
     border: 10px solid #43434300;
     border-radius: 20px;
     transition: 0.5s ease-out;
-    transform: scale(.1);
+    transform: scale(0.1);
 }
 input:checked ~ .checkboxxx1 {
     width: 0px;
@@ -1132,7 +1132,7 @@ input:checked ~ .checkboxxx1 {
     border: 10px solid #c72424;
     border-radius: 5px;
     background-color: #c72424;
-    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(135deg) ;
+    transform: translateX(25px) translateY(-18px) scale(0.5) rotate(135deg);
 }
 
 .checkboxxx2 {
@@ -1157,8 +1157,8 @@ input:checked ~ .checkboxxx2 {
 }
 .checkboxxxx {
     position: absolute;
-    top: -19px;
-    left: 25px;
+    top: -28px;
+    left: 16px;
     display: block;
 
     /* transition: all 0.5s, background-color 0s, border-color 0s; */
@@ -1271,5 +1271,10 @@ input:checked ~ .checkboxxxx {
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+}
+
+#num_checked, #score  {
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger; 
 }

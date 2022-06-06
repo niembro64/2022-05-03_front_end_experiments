@@ -507,7 +507,6 @@ function onMouseDownDesign(ele) {
     };
 })();
 
-
 //////////////////////////////////////////////////////////////////////
 
 function onEnterR(ele) {
@@ -595,15 +594,29 @@ function cubeColorUp() {
 ///////////////////////////////////////////////
 // checkboxes
 
+var num_checks = 0;
+var num_checked_ele = document.querySelector("#num_checked");
+num_checked_ele.innerHTML = 0;
+
 function checkBoxOnMouseDownHandler(ele) {
     var click_up = new Audio("click_up.wav");
     click_up.volume = 0.1;
     click_up.play();
+    console.log(ele.firstElementChild.firstElementChild.checked ? "YES" : "NO");
+    ele.firstElementChild.firstElementChild.checked
+        ? num_checks--
+        : num_checks++;
+    num_checked_ele.innerHTML = num_checks;
 }
 function checkBoxOnMouseDownHandler2(ele) {
-    var click_up = new Audio("click_down.wav");
-    click_up.volume = 0.1;
-    click_up.play();
+    // var click_up = new Audio("click_down.wav");
+    // click_up.volume = 0.1;
+    // click_up.play();
+    console.log(ele.firstElementChild.firstElementChild.checked ? "YES" : "NO");
+    ele.firstElementChild.firstElementChild.checked
+        ? num_checks--
+        : num_checks++;
+    num_checked_ele.innerHTML = num_checks;
 }
 
 ///////////////////////////////////////
