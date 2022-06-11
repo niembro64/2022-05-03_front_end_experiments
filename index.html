@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="linebox">
-                <h2>Emoji Hunt</h2>
+                <h2>Glass Hunt</h2>
                 <ul>
                     <li>Mouse over to scare them.</li>
                     <li>Click to generate more.</li>
@@ -83,23 +83,6 @@
 
                 <h3>SCORE: <span id="score">0</span></h3>
 
-                <!-- <button onclick="generateEmoji()" id="generate">
-            <b>Generate 3</b>
-        </button> -->
-                <!-- <p><i>coming soon</i></p>
-    <div id="bodyName">
-      <div>
-        <div id="dupParent" onmouseenter="duplicate()">
-          <div id="duplicater">🤔</div>
-          <div id="duplicater">🤔</div>
-          <div id="duplicater">🤔</div>
-        </div>
-        <h1 id="firstName">Test Niemo</h1>
-        <button onmousedown="deleteElement(this)">Delete</button>
-        <button onmousedown="changeElement(this)">Change</button>
-      </div>
-    </div>
-    <div class="linebox"></div> -->
                 <div class="worldContainer">
                     <article class="card2">
                         <div
@@ -411,14 +394,14 @@
                         </div>
                     </label>
                 </div>
-                <ul style="list-style-type:none;"">
+                <ul style="list-style-type: none">
                     <li>Slowed</li>
                 </ul>
             </div>
             <div class="linebox">
-                <h2>LoadBar Tweak</h2>
+                <h2>LoadBar Fill</h2>
                 <ul>
-                    <li>User input coming Soon.</li>
+                    <li>In progress.</li>
                 </ul>
                 <div class="progress-bar">
                     <span class="number" data-value="100"></span>
@@ -433,6 +416,69 @@
                         />
                     </svg>
                 </div>
+            </div>
+            <div class="linebox">
+                <h2>Menu Pop</h2>
+                <ul>
+                    <li>Mouse over to highlight.</li>
+                    <li>Click and hold to select.</li>
+                </ul>
+                <ul class="menu_tweak">
+                    <li
+                        onmousedown="on_down_menu_tweak(this)"
+                        onmouseup="on_hover_menu_tweak(this)"
+                        onmouseenter="on_hover_menu_tweak(this)"
+                        class="menu_li"
+                        style="--i: 6"
+                    >
+                        <h1>Home</h1>
+                    </li>
+                    <li
+                        onmousedown="on_down_menu_tweak(this)"
+                        onmouseup="on_hover_menu_tweak(this)"
+                        onmouseenter="on_hover_menu_tweak(this)"
+                        class="menu_li"
+                        style="--i: 5"
+                    >
+                        <h1>About</h1>
+                    </li>
+                    <li
+                        onmousedown="on_down_menu_tweak(this)"
+                        onmouseup="on_hover_menu_tweak(this)"
+                        onmouseenter="on_hover_menu_tweak(this)"
+                        class="menu_li"
+                        style="--i: 4"
+                    >
+                        <h1>Contact</h1>
+                    </li>
+                    <li
+                        onmousedown="on_down_menu_tweak(this)"
+                        onmouseup="on_hover_menu_tweak(this)"
+                        onmouseenter="on_hover_menu_tweak(this)"
+                        class="menu_li"
+                        style="--i: 3"
+                    >
+                        <h1>Our Team</h1>
+                    </li>
+                    <li
+                        onmousedown="on_down_menu_tweak(this)"
+                        onmouseup="on_hover_menu_tweak(this)"
+                        onmouseenter="on_hover_menu_tweak(this)"
+                        class="menu_li"
+                        style="--i: 2"
+                    >
+                        <h1>Privacy</h1>
+                    </li>
+                    <li
+                        onmousedown="on_down_menu_tweak(this)"
+                        onmouseup="on_hover_menu_tweak(this)"
+                        onmouseenter="on_hover_menu_tweak(this)"
+                        class="menu_li"
+                        style="--i: 1"
+                    >
+                        <h1>FAQ</h1>
+                    </li>
+                </ul>
             </div>
         </div>
         <script defer src="script.js"></script>

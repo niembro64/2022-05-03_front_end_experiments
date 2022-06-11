@@ -634,3 +634,17 @@ setInterval(() => {
         counter = 0;
     }
 }, 100);
+
+
+function on_hover_menu_tweak(){
+    var audio_a = new Audio("mixkit-game-ball-tap-2073.wav");
+    audio_a.volume = .2;
+    audio_a.play();
+    
+}
+function on_down_menu_tweak(){
+    var audio_a = new Audio("mixkit-retro-game-notification-212.wav");
+    audio_a.volume = .2;
+    audio_a.play();
+    
+}

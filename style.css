@@ -1272,7 +1272,99 @@ html {
     scroll-behavior: smooth;
 }
 
-#num_checked, #score  {
+#num_checked,
+#score {
     font-family: "Courier New", Courier, monospace;
-    font-size: larger; 
+    font-size: larger;
+}
+
+.menu_tweak {
+    margin: 70px 0px 0px 0px;
+    position: relative;
+    transform: skewY(-10deg);
+    font-size: xx-large;
+    transition: 1s;
+}
+
+.menu_li {
+    position: relative;
+    left: 20px;
+    list-style: none;
+    width: 100px;
+    background: rgb(30, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    padding: 6px;
+    z-index: var(--i);
+    transition: 1s ease;
+    box-shadow: 0px 0px 0px 0px rgba(30, 29, 29, .2);
+}
+.menu_li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background: rgb(15, 13, 13);
+    left: -40px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 1s ease;
+    box-shadow: 0px 0px 0px 0px rgba(30, 29, 29, .2);
+}
+
+.menu_li::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgb(55, 53, 53);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 1s ease;
+    box-shadow: 0px 0px 0px 0px rgba(30, 29, 29, .2);
+}
+
+.menu_li:hover {
+    color: rgb(255, 255, 255);
+    transform: translateX(10px) translateY(10px);
+    background-color: rgb(43, 120, 228);
+    transition: 0.2s;
+    box-shadow: 5px 5px 0px 5px rgba(43, 120, 228, .2);
+}
+.menu_li:hover::before {
+    background-color: rgb(30, 89, 170);
+    transition: 0.2s ease;
+    box-shadow: -5px 5px 0px 5px rgba(43, 120, 228, .2);
+}
+.menu_li:hover::after {
+    background-color: rgb(67, 135, 230);
+    transition: 0.2s ease;
+
+    box-shadow: 5px -5px 0px 5px rgba(43, 120, 228, .2);
+}
+.menu_li:active {
+    box-shadow: 10px 10px 0px 10px rgba(255, 106, 255, .2);
+    color: rgb(255, 255, 255);
+    transform: translateX(20px) translateY(20px);
+    background-color: rgb(255, 106, 255);
+    transition: 0.2s ease;
+
+}
+.menu_li:active::before {
+    box-shadow: -10px 10px 0px 10px rgba(255, 106, 255, .2);
+    background-color: rgb(217, 90, 217);
+    transition: 0.2s ease;
+
+}
+.menu_li:active::after {
+    box-shadow: 10px -10px 0px 10px rgba(255, 106, 255, .2);
+    background-color: rgb(255, 141, 255);
+    transition: 0.2s ease;
+
 }
