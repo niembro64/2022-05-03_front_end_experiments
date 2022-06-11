@@ -24,8 +24,14 @@ function onMouseLeaveEventHandlerEmoji(ele) {
 
 var addColor = 85;
 var addALpha = 0.2;
+function onMouseOverEventHandlerClick(ele) {
+    ele.style.cursor = "pointer";
+}
+function onMouseLeaveEventHandlerEmojiClick(ele){
+    // ele.style.cursor = "none";
+}
 function onMouseOverEventHandler(ele) {
-    // ele.style.cursor = "grabbing";
+    // ele.style.cursor = "pointer";
     // ele.style.cursor = "help";
     // document.getElementsByTagName("body")[0].style.cursor = "url('1_red.cur'), auto";
 
@@ -635,16 +641,13 @@ setInterval(() => {
     }
 }, 100);
 
-
-function on_hover_menu_tweak(){
+function on_hover_menu_tweak() {
     var audio_a = new Audio("mixkit-game-ball-tap-2073.wav");
-    audio_a.volume = .2;
+    audio_a.volume = 0.2;
     audio_a.play();
-    
 }
-function on_down_menu_tweak(){
+function on_down_menu_tweak() {
     var audio_a = new Audio("mixkit-retro-game-notification-212.wav");
-    audio_a.volume = .2;
+    audio_a.volume = 0.2;
     audio_a.play();
-    
 }
