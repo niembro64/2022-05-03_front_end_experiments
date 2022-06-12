@@ -27,7 +27,7 @@ var addALpha = 0.2;
 function onMouseOverEventHandlerClick(ele) {
     ele.style.cursor = "pointer";
 }
-function onMouseLeaveEventHandlerEmojiClick(ele){
+function onMouseLeaveEventHandlerEmojiClick(ele) {
     // ele.style.cursor = "none";
 }
 function onMouseOverEventHandler(ele) {
@@ -629,17 +629,21 @@ function checkBoxOnMouseDownHandler2(ele) {
 // circle aniamtion
 
 let counter = 0;
+
 setInterval(() => {
     const el = document.querySelector(".number");
+    const circle = document.querySelector(".circleee");
     const elValue = Number(el.getAttribute("data-value"));
     if (counter !== elValue) {
         counter++;
         el.innerHTML = `${counter}%`;
+        circle.style.strokeDashoffset -= 8.2;
     }
     if (counter == 100) {
         counter = 0;
+        circle.style.strokeDashoffset = 410;
     }
-}, 100);
+}, 200);
 
 function on_hover_menu_tweak() {
     var audio_a = new Audio("mixkit-game-ball-tap-2073.wav");
