@@ -636,14 +636,14 @@ setInterval(() => {
     const elValue = Number(el.getAttribute("data-value"));
     if (counter !== elValue) {
         counter++;
-        el.innerHTML = `${counter}%`;
+        el.innerHTML = `${Math.floor(counter)}%`;
         circle.style.strokeDashoffset -= 8.2;
     }
     if (counter == 100) {
         counter = 0;
         circle.style.strokeDashoffset = 410;
     }
-}, 200);
+}, 33.33333333);
 
 function on_hover_menu_tweak() {
     var audio_a = new Audio("mixkit-game-ball-tap-2073.wav");
