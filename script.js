@@ -552,6 +552,7 @@ function cubeColorOut(ele) {
         cube_line_inside[i].style["transition-duration"] = ".3s";
         cube_line_inside[i].style["width"] = "100%";
         cube_line_inside[i].style["height"] = "100%";
+        cube_line_inside[i].style["border-radius"] = "0%"; 
     }
 }
 function cubeColorDown() {
@@ -578,7 +579,7 @@ function cubeColorUp() {
         cube_line_inside[i].style["filter"] = "invert(0)";
         cube_line_inside[i].style["width"] = "85%"; 
         cube_line_inside[i].style["height"] = "85%"; 
-        cube_line_inside[i].style["border-radius"] = "0%"; 
+        cube_line_inside[i].style["border-radius"] = "50%"; 
     }
 }
 
