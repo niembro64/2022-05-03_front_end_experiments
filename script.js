@@ -531,69 +531,54 @@ function onEnterA(ele) {
 ////////////////
 
 var cube_line = document.querySelectorAll(".cube_side");
+var cube_line_inside = document.querySelectorAll(".cube_side_inside");
 var spinnerOuterOuter = document.querySelector(".spinnerOuterOuter");
-// var inner_cube_line = document.getElementsByClassName("inner_cube_side");
 
 function cubeColorIn(ele) {
     ele.style.cursor = "pointer";
-    // spinnerOuterOuter.style.animationDuration = "7s";
-
     for (var i = 0; i < cube_line.length; i++) {
         cube_line[i].style["transition-duration"] = ".3s";
         cube_line[i].style["filter"] = "saturate(100%)";
-        // cube_line[i].style["border-radius"] = "50%";
-        // cube_line[i].style["box-shadow"] =
-        // "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
-
-        // cube_line[i].children[0].style["transition-duration"] = ".3s";
-        // cube_line[i].children[0].style["width"] = "180px";
-        // cube_line[i].children[0].style["height"] = "180px";
+        cube_line_inside[i].style["transition-duration"] = ".3s";
+        cube_line_inside[i].style["width"] = "70%";
+        cube_line_inside[i].style["height"] = "70%";
     }
 }
 function cubeColorOut(ele) {
-    // spinnerOuterOuter.style.animationDuration = "33s";
     ele.style.cursor = "default";
     for (var i = 0; i < 6; i++) {
         cube_line[i].style["transition-duration"] = "3s";
         cube_line[i].style["filter"] = "saturate(0%)";
-        // cube_line[i].style["border-radius"] = "0px";
-        // cube_line[i].style["box-shadow"] =
-        // "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
-
-        // cube_line[i].children[0].style["transition-duration"] = "1s";
-        // cube_line[i].children[0].style["width"] = "0px";
-        // cube_line[i].children[0].style["height"] = "0px";
+        cube_line_inside[i].style["transition-duration"] = ".3s";
+        cube_line_inside[i].style["width"] = "100%";
+        cube_line_inside[i].style["height"] = "100%";
     }
 }
-
 function cubeColorDown() {
     for (var i = 0; i < cube_line.length; i++) {
         cube_line[i].style["transition-duration"] = ".2s";
-        // cube_line[i].style["filter"] = "saturate(100%)";
         cube_line[i].style["border-radius"] = "50%";
         cube_line[i].style["box-shadow"] =
             "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
-        // cube_line[i].style["width"] = "60px";
-        // cube_line[i].style["height"] = "60px";
-
-        // cube_line[i].children[0].style["transition-duration"] = ".3s";
-        // cube_line[i].children[0].style["width"] = "180px";
-        // cube_line[i].children[0].style["height"] = "180px";
+        cube_line_inside[i].style["transition-duration"] = ".3s";
+        cube_line_inside[i].style["filter"] = "invert(1)";
+        cube_line_inside[i].style["width"] = "0%"; 
+        cube_line_inside[i].style["height"] = "0%"; 
+        cube_line_inside[i].style["border-radius"] = "50%"; 
+        cube_line_inside[i].style["border-radius"] = "50%"; 
     }
 }
 function cubeColorUp() {
     for (var i = 0; i < 6; i++) {
         cube_line[i].style["transition-duration"] = "3s";
-        // cube_line[i].style["filter"] = "saturate(0%)";
         cube_line[i].style["border-radius"] = "0px";
         cube_line[i].style["box-shadow"] =
-            "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
-        // cube_line[i].style["width"] = "160px";
-        // cube_line[i].style["height"] = "160px";
-
-        // cube_line[i].children[0].style["transition-duration"] = "1s";
-        // cube_line[i].children[0].style["width"] = "0px";
-        // cube_line[i].children[0].style["height"] = "0px";
+        "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
+        cube_line_inside[i].style["transition-duration"] = "3s";
+        cube_line_inside[i].style["filter"] = "invert(0)";
+        cube_line_inside[i].style["width"] = "85%"; 
+        cube_line_inside[i].style["height"] = "85%"; 
+        cube_line_inside[i].style["border-radius"] = "0%"; 
     }
 }
 
@@ -643,7 +628,7 @@ setInterval(() => {
         counter = 0;
         circle.style.strokeDashoffset = 410;
     }
-}, 33.33333333);
+}, 200);
 
 function on_hover_menu_tweak() {
     var audio_a = new Audio("mixkit-game-ball-tap-2073.wav");
@@ -655,3 +640,5 @@ function on_down_menu_tweak() {
     audio_a.volume = 0.2;
     audio_a.play();
 }
+
+//////////////////////////
