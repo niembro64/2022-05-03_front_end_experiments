@@ -544,17 +544,6 @@ function cubeColorIn(ele) {
         cube_line_inside[i].style["height"] = "70%";
     }
 }
-function cubeColorOut(ele) {
-    ele.style.cursor = "default";
-    for (var i = 0; i < 6; i++) {
-        cube_line[i].style["transition-duration"] = "3s";
-        cube_line[i].style["filter"] = "saturate(0%)";
-        cube_line_inside[i].style["transition-duration"] = ".3s";
-        cube_line_inside[i].style["width"] = "100%";
-        cube_line_inside[i].style["height"] = "100%";
-        cube_line_inside[i].style["border-radius"] = "0%"; 
-    }
-}
 function cubeColorDown() {
     for (var i = 0; i < cube_line.length; i++) {
         cube_line[i].style["transition-duration"] = ".2s";
@@ -563,9 +552,8 @@ function cubeColorDown() {
             "0px 0px 3px 0px rgb(255, 255, 255), 0px 0px 50px 0px rgb(255, 255, 255), 0px 0px 100px 0px rgb(255, 255, 255)";
         cube_line_inside[i].style["transition-duration"] = ".3s";
         cube_line_inside[i].style["filter"] = "invert(1)";
-        cube_line_inside[i].style["width"] = "0%"; 
-        cube_line_inside[i].style["height"] = "0%"; 
-        cube_line_inside[i].style["border-radius"] = "50%"; 
+        cube_line_inside[i].style["width"] = "80%"; 
+        cube_line_inside[i].style["height"] = "80%"; 
         cube_line_inside[i].style["border-radius"] = "50%"; 
     }
 }
@@ -575,11 +563,22 @@ function cubeColorUp() {
         cube_line[i].style["border-radius"] = "0px";
         cube_line[i].style["box-shadow"] =
         "0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgb(255, 255, 255)";
-        cube_line_inside[i].style["transition-duration"] = "3s";
+        cube_line_inside[i].style["transition-duration"] = ".3s";
         cube_line_inside[i].style["filter"] = "invert(0)";
-        cube_line_inside[i].style["width"] = "85%"; 
-        cube_line_inside[i].style["height"] = "85%"; 
+        cube_line_inside[i].style["width"] = "0%"; 
+        cube_line_inside[i].style["height"] = "0%"; 
         cube_line_inside[i].style["border-radius"] = "50%"; 
+    }
+}
+function cubeColorOut(ele) {
+    ele.style.cursor = "default";
+    for (var i = 0; i < 6; i++) {
+        cube_line[i].style["transition-duration"] = "3s";
+        cube_line[i].style["filter"] = "saturate(0%)";
+        cube_line_inside[i].style["transition-duration"] = ".3s";
+        cube_line_inside[i].style["width"] = "100%";
+        cube_line_inside[i].style["height"] = "100%";
+        cube_line_inside[i].style["border-radius"] = "0%"; 
     }
 }
 
